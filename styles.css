@@ -71,4 +71,48 @@
 
 /*#region most sold*/
 
-.most-sold-section/*#endregion*/;
+.most-sold-title {
+  height: 12vh;
+  gap: 0.5rem;
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #392f5a;
+}
+
+.most-sold-title1 {
+  font-size: 1.3rem;
+}
+
+.most-sold-title2 {
+  font-size: 1.7rem;
+}
+
+.most-sold-carousel {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5rem;
+  overflow-x: scroll;
+  scrollbar-width: none;
+}
+
+.most-sold-item {
+  border: 1px solid red;
+  width: 100%;
+  height: auto;
+}
+
+.most-sold-item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.most-sold-item h2 {
+  font-size: 0.5rem;
+}
+
+/*#endregion*/

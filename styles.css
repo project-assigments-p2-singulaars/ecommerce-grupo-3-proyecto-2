@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*#region header*/
+
+.header-container {
+  position: relative;
+}
+
+.header-image {
+  height: 70vh;
+}
+
+.header-overlay-elements {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 20vh;
+  /* border: 1px solid blue; */
+  letter-spacing: 0.3rem;
+}
+
+.header-text {
+  width: 90%;
+  position: absolute;
+  top: 20%;
+  left: 8%;
+  text-align: left;
+  font-family: "Passion One", sans-serif;
+  color: #ffd801;
+}
+
+.header-text1 {
+  font-size: 3rem;
+  text-shadow: 2px 2px 4px rgba(20, 0, 0, 0.5);
+}
+
+.header-text2 {
+  font-size: 2.5rem;
+  text-shadow: 2px 2px 4px rgba(20, 0, 0, 0.5);
+}
+
+.header-button {
+  position: absolute;
+  top: 80%;
+  left: 8%;
+  text-align: left;
+  font-size: 1rem;
+  background-color: #ffd801;
+  color: #392f5a;
+  padding: 0.6rem 1.3rem;
+  font-weight: bolder;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-family: "Open Sans", sans-serif;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header-button:hover {
+  color: #ed821d;
+}
+
+/*#endregion*/
+
+/*#region most sold*/
+
+.most-sold-section/*#endregion*/;

@@ -1,24 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Duck U</title>
+    <title>DUCK U</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
-<body>
-    <nav>
-        <img src="img/sideBar.svg" alt="icono menu" />
-        <div class="title">
-            <img class="icons" src="img/duck.svg" alt="">
-        <h1>Duck U</h1>
-        </div>
-        <div>
-            <img class="icons" src="img/lupa.svg" alt="icono de busqueda">
-            <img class="icons" src="img/fav.svg" alt="icono de favoritos">
-            <img class="icons" src="img/carrito.svg" alt="icono de carrito de compra">
-        </div>
-    </nav>
 
+<body>
+    <main>
+
+        <section class="header-section">
+            <div class="header-container">
+                <img class="header-image" src="./img/header-image.jpg">
+                <div class="header-overlay-elements">
+                    <div class="header-text">
+                        <p class="header-text1">SEMANA SANTA</p>
+                        <p class="header-text2">50% OFF</p>
+                    </div>
+                    <button class="header-button">EXPLORAR</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="most-sold-section">
+
+            <div class="most-sold-title">
+                <span class="most-sold-title1">LOS PATITOS</span>
+                <span class="most-sold-title2">MÁS VENDIDOS</span>
+            </div>
+
+            <div class="most-sold-carousel">
+                <div class="most-sold-cards">
+                    <img src="./img/pipi.png" alt="Patito de Pipi">
+                    <h2>Pipi</h2>
+                    <p>8,00€</p>
+                </div>
+                <div class="most-sold-cards">
+                    <img src="./img/pipi.png" alt="Patito de Pipi">
+                    <h2>Pipi</h2>
+                    <p>8,00€</p>
+                </div>
+            </div>
+            <button class="prev">&#10094;</button>
+            <button class="next">&#10095;</button>
+            </div>
+
+        </section>
+
+        <section class="category-section">
+            <div class="category-grid-container">
+                <div class="category-grid-item">
+                    <p>CULTURA POP</p>
+                    <img src="./img/pink-panter.jpg">
+                </div>
+                <div class="category-grid-item">
+                    <p>ARTISTAS</p>
+                    <img src="./img/singer-duck.png">
+                </div>
+                <div class="category-grid-item">
+                    <p>PELÍCULAS</p>
+                    <img src="./img/chewaka-duck.png">
+                </div>
+                <div class="category-grid-item">
+                    <p>PROGRAMACIÓN</p>
+                    <img src="./img/css-duck.png">
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
+
 </html>

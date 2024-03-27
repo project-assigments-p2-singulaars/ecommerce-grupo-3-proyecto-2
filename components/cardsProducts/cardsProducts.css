@@ -11,11 +11,32 @@
 --light-grey: #969595; 
 }
 
-.fav {
+#favS {
+    width: 25px;
+    height: auto;
+    background-color: none;
+    border: none;
+    z-index: 2;
+position: absolute;
+left: 35%;
+    }
+    
+.product-img-Fav-container {
+    display: flex;
+}
+
+#favL {
 width: 50px;
 height: auto;
+
 background-color: none;
 border: none;
+display: flex;
+justify-self: flex-end;
+z-index: 2;
+position: absolute;
+right: 0;
+
 }
 
 .cardS {
@@ -40,16 +61,37 @@ border: none;
     color: var(--orange-duck);
     font-size: 1.5625rem;
 }
-.porductImgViewsContainer{
+.porductImgViewsContainer {
+    width: 100%;
     display: flex;
     flex-direction: row;}
 
-.productTitleAmmountButton {
+.v1 {
+    width: 30%;
+    height: auto;
+}
+
+.v2 {
+    width: 30%;
+    height: auto;
+}
+
+.v3 {
+    width: 30%;
+    height: auto;
+}
+
+
+.product-title-ammount-button-contatiner {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
+
 .card-tittle {
     font-size: 1.5625rem;
+    font-weight: bold;
+    
 }
 
 .buttonProductAmmount{
@@ -57,13 +99,25 @@ border: none;
     color: var(--blue-dark);
     border-radius: 10px;
     border: #969595 solid 1px;
+    width: 4.5rem;
+    height: 2.125rem;
+    align-self: center;
+    
 }
+
+.productButtonsContantiner {
+    display: flex;
+    justify-content: space-around;
+
+}
+
 .button-add-to-card {
     height: 2.9375rem;
     width: 10.625rem;
     background-color: var(--yellow-duck);
     color: var(--blue-dark);
     border-radius: 25px;
+    border: none;
 }
 
 .button-buy-now {
@@ -72,6 +126,7 @@ width: 10.625rem;
 background-color: var(--yellow-duck);
 color: var(--blue-dark);
 border-radius: 25px;
+border: none;
 }
 
 

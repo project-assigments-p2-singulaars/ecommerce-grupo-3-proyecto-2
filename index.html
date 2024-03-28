@@ -1,34 +1,95 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Duck U</title>
+    <link rel="icon" href="./img/patito-favicon.png" type="image/x-icon">
+    <title>DUCK U</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="./components/header/header.css">
 </head>
+
 <body>
-   <footer>
-    <div id="duck-footer">
-        <div id="duck-text-box">
-            <p>
-                ¿No has encontrado el patito que buscabas?
-                Vuelve a mirar.
-            </p>
-        </div>
-        
-    </div>
-    <img src="./img/patito.png" alt="" id="duck-img">
-    <div id="footer-div">
-        <div id="social-media">
-            <a href="https://facebook.com/tupagina"><img src="img/facebook.png" alt="social-media-icon"/></a>
-            <a href="https://twitter.com/tupagina"><img src="img/twitter.png" alt="social-media-icon"/></a>
-            <a href="https://twitter.com/tupagina"><img src="img/insta.png" alt="social-media-icon"/></a>
-        </div>
-        <div id="page-information">
-            <p>Todos los derechos reservados 2024 | Aviso legal | Términos y condiciones | Política de Cookies | Contacta con nosotros | Condiciones de compra</p>
-        </div>
-    </div>
-   </footer>
-   <script src="https://kit.fontawesome.com/a81adabce5.js" crossorigin="anonymous"></script>
+    <script src="./components/header/header.js"></script>
+    <main>
+        <section class="header-section">
+            <div class="header-container">
+                <img class="header-image" src="./img/header-image.jpg">
+                <div class="header-overlay-elements">
+                    <div class="header-text">
+                        <p class="header-text1">SEMANA SANTA</p>
+                        <p class="header-text2">50% OFF</p>
+                    </div>
+                    <button class="header-button">EXPLORAR</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="most-sold-section">
+
+            <div class="most-sold-title">
+                <span class="most-sold-title1">LOS PATITOS</span>
+                <span class="most-sold-title2">MÁS VENDIDOS</span>
+            </div>
+
+            <div class="most-sold-carousel">
+
+                <div class="most-sold-item">
+                    <img src="./img/pipi.png" class="product-image" alt="Patito de Pipi">
+                    <h2 class="product-name">PIPI</h2>
+                    <p class="product-price">8,00€</p>
+                </div>
+
+                <div class="most-sold-item">
+                    <img src="./img/londres.jpg" class="product-image" alt="Patito de Londres">
+                    <h2 class="product-name">LONDRES</h2>
+                    <p class="product-price">8,00€</p>
+                </div>
+
+                <div class="most-sold-item">
+                    <img src="./img/donut.png" class="product-image" alt="Patito de Donut">
+                    <h2 class="product-name">DONUT</h2>
+                    <p class="product-price">8,00€</p>
+                </div>
+
+                <div class="most-sold-item">
+                    <img src="./img/chewaka-duck.png" class="product-image" alt="Patito de Donut">
+                    <h2 class="product-name">CHEWAKA</h2>
+                    <p class="product-price">8,00€</p>
+                </div>
+
+                <div class="most-sold-item">
+                    <img src="./img/ducktrix.png" class="product-image" alt="Patito de Donut">
+                    <h2 class="product-name">MATRIX</h2>
+                    <p class="product-price">8,00€</p>
+                </div>
+
+            </div>
+            <!-- <button class="prev">&#10094;</button>
+            <button class="next">&#10095;</button> -->
+        </section>
+
+        <section class="category-section">
+            <div class="category-grid-container">
+                <div class="category-grid-item">
+                    <p class="category-grid-name">CULTURA POP</p>
+                    <img src="./img/pink-panter.jpg">
+                </div>
+                <div class="category-grid-item">
+                    <p class="category-grid-name">ARTISTAS</p>
+                    <img src="./img/singer-duck.png">
+                </div>
+                <div class="category-grid-item">
+                    <p class="category-grid-name">PELÍCULAS</p>
+                    <img src="./img/chewaka-duck.png">
+                </div>
+                <div class="category-grid-item">
+                    <p class="category-grid-name">PROGRAMACIÓN</p>
+                    <img src="./img/css-duck.png">
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
+
 </html>

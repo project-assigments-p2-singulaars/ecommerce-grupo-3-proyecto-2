@@ -35,10 +35,16 @@ header {
     width: 50%;
     height: 100%;
     align-items: center;
-    font-size: 2.5rem;
 }
-#logo{
-    height: 130px;
+.title-logo{
+    h1{
+        width: 70%;
+        font-size: 2.5rem;
+
+    }
+    img{
+        height: 80%;
+    }
 }
 #sub-menu{
     height: 100%;

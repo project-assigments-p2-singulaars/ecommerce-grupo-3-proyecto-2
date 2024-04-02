@@ -18,6 +18,7 @@ header {
   padding: 0;
 }
 .sidebar {
+  
   display: flex;
   align-items: center;
   justify-content: center;
@@ -50,11 +51,13 @@ header {
   width: 40%;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: flex-end;
+  margin-right: 0.5em;
+  gap: 1em;
 }
 .header-icon {
-  height: 40%;
-  width: 20%;
+  height: 44%;
+  width: 19%;
 }
 
 #menu-mobile {
@@ -110,7 +113,3 @@ li:active {
   margin-left: 5%;
 }
 
-#sub-menu {
-  display: flex;
-  gap: 1em;
-}

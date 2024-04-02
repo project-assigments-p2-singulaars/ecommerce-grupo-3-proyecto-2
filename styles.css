@@ -6,15 +6,18 @@
   box-sizing: border-box;
 }
 
+
 /*#region header*/
 
 .header-container {
   position: relative;
+ 
 }
 
 .header-image {
   height: 70vh;
   width: 100vw;
+  
 }
 
 .header-overlay-elements {
@@ -66,6 +69,11 @@
 
 .header-button:hover {
   color: #ed821d;
+}
+
+
+main{
+  margin-top: 10%;
 }
 
 /*#endregion*/

@@ -82,7 +82,7 @@ right: 0;
 }
 
 
-.product-title-ammount-button-contatiner {
+.productTitleAmmountButtonContatiner {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -111,7 +111,7 @@ right: 0;
 
 }
 
-.button-add-to-card {
+.buttonAddToCard {
     height: 2.9375rem;
     width: 10.625rem;
     background-color: var(--yellow-duck);
@@ -120,7 +120,7 @@ right: 0;
     border: none;
 }
 
-.button-buy-now {
+.buttonBuyNow {
 height: 2.9375rem;
 width: 10.625rem;
 background-color: var(--yellow-duck);

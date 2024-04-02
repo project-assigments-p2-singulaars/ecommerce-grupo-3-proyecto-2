@@ -30,7 +30,7 @@ titleLogoDiv.appendChild(logoImg);
 
 // Crear el título "Duck U"
 const title = document.createElement("img");
-title.setAttribute("src", "./img/duck-u-logo.png");
+title.setAttribute("src", "./assets/img/duck-u-logo.png");
 title.setAttribute("id", "duck-u-logo");
 titleLogoDiv.appendChild(title);
 

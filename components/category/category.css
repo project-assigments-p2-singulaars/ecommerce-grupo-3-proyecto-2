@@ -1,0 +1,41 @@
+.category-section {
+  height: 50vh;
+}
+
+.category-grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.category-grid-item {
+  padding: 1rem;
+}
+
+.category-grid-name {
+  font-family: "Passion One", sans-serif;
+  font-size: 1.5rem;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.category-grid-item:nth-child(1) {
+  background-color: #afe9bf;
+}
+
+.category-grid-item:nth-child(2) {
+  background-color: #afd2e9;
+}
+
+.category-grid-item:nth-child(3) {
+  background-color: #ff9e77;
+}
+
+.category-grid-item:nth-child(4) {
+  background-color: #e98fff;
+}
+
+.category-grid-item img {
+  max-width: 80%;
+  height: auto;
+}

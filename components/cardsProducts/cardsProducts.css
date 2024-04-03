@@ -43,7 +43,7 @@ right: 0;
     font-family: 'Open Sans', sans-serif;
     width: 40%;
     height: 50%;
-    border: 1px solid red;
+    
 }
 .card-title {
     font-weight: bold;
@@ -55,7 +55,6 @@ right: 0;
 }
 .cardL{
     font-family: 'Open Sans', sans-serif;
-    border: solid 1px red;
 }
 .priceL {
     color: var(--orange-duck);

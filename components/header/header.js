@@ -7,7 +7,7 @@ sidebarDiv.classList.add("sidebar");
 
 // Crear la imagen del icono del menú
 const sidebarIcon = document.createElement("img");
-sidebarIcon.setAttribute("src", "./assets/icons/menu-icon.png");
+sidebarIcon.setAttribute("src", "../../assets/icons/menu-icon.png");
 sidebarIcon.setAttribute("alt", "menu-selector");
 sidebarDiv.appendChild(sidebarIcon);
 
@@ -25,12 +25,16 @@ titleLogoDiv.classList.add("title-logo");
 
 // Crear la imagen del logo
 const logoImg = document.createElement("img");
-logoImg.setAttribute("src", "./assets/icons/header-footer-duck-icon.png");
+logoImg.setAttribute("src", "../../assets/icons/header-footer-duck-icon.png");
 titleLogoDiv.appendChild(logoImg);
 
 // Crear el título "Duck U"
 const title = document.createElement("img");
+<<<<<<< HEAD
 title.setAttribute("src", "./assets/img/duck-u-logo.png");
+=======
+title.setAttribute("src", "../../assets/img/duck-u-logo.png");
+>>>>>>> 84e89c49926eee0d79fc7120b92ee786ffdea45d
 title.setAttribute("id", "duck-u-logo");
 titleLogoDiv.appendChild(title);
 
@@ -44,19 +48,19 @@ subMenuDiv.setAttribute("id", "sub-menu");
 // Crear las imágenes de los íconos del sub-menú
 const searchIcon = document.createElement("img");
 searchIcon.classList.add("header-icon");
-searchIcon.setAttribute("src", "./assets/icons/magnifying-glass-icon.png");
+searchIcon.setAttribute("src", "../../assets/img/mag.svg");
 searchIcon.setAttribute("alt", "magnifying-glass-icon");
 subMenuDiv.appendChild(searchIcon);
 
 const favoritesIcon = document.createElement("img");
 favoritesIcon.classList.add("header-icon");
-favoritesIcon.setAttribute("src", "./assets/icons/favorites-icon.png");
+favoritesIcon.setAttribute("src", "../../assets/img/fav.svg");
 favoritesIcon.setAttribute("alt", "favorites-icon");
 subMenuDiv.appendChild(favoritesIcon);
 
 const carIcon = document.createElement("img");
 carIcon.classList.add("header-icon");
-carIcon.setAttribute("src", "./assets/icons/car-icon.png");
+carIcon.setAttribute("src", "../../assets/img/car.svg");
 carIcon.setAttribute("alt", "shopping-car-icon");
 subMenuDiv.appendChild(carIcon);
 
@@ -74,7 +78,7 @@ sideNav.appendChild(ul);
 
 // boton cerrar menu
 const closeIcon = document.createElement("img");
-closeIcon.setAttribute("src", "./assets/icons/exit-icon.png");
+closeIcon.setAttribute("src", "../../assets/icons/exit-icon.png");
 closeIcon.setAttribute("id", "close-menu");
 ul.appendChild(closeIcon);
 
@@ -95,7 +99,7 @@ categories.forEach((category) => {
   const li = document.createElement("li");
   const duckListIcon = document.createElement("img");
   duckListIcon.classList.add("duck-list-icon");
-  duckListIcon.setAttribute("src", "./assets/icons/duck-icon.png");
+  duckListIcon.setAttribute("src", "../../assets/icons/duck-icon.png");
 
   const a = document.createElement("a");
   a.classList.add("category");

@@ -13,7 +13,7 @@ divDuckFooter.appendChild(divTextBox);
 footer.appendChild(divDuckFooter);
 
 const duckImg = document.createElement("img");
-duckImg.setAttribute("src", "./assets/img/patito.png");
+duckImg.setAttribute("src", "../../assets/img/patito.png");
 duckImg.setAttribute("id", "duck-img");
 footer.appendChild(duckImg);
 
@@ -31,15 +31,15 @@ footerDiv.appendChild(divSocialMedia);
 const mediaIcons = [
   {
     id: "facebook",
-    src: "./assets/img/facebook.png",
+    src: "../../assets/img/facebook.png",
   },
   {
     id: "twitter",
-    src: "./assets/img/twitter.png",
+    src: "../../assets/img/twitter.png",
   },
   {
     id: "instagram",
-    src: "./assets/img/insta.png",
+    src: "../../assets/img/insta.png",
   },
 ];
 mediaIcons.forEach((obj) => {

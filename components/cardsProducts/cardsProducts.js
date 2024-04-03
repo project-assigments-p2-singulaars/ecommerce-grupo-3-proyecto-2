@@ -51,7 +51,7 @@ document.body.appendChild(cardS);
 
 
 let cardL = document.createElement('section');
-cardL.classList.add("cardL")
+cardL.classList.add("cardL");
 
 let productImgFavContainer = document.createElement('div');
 
@@ -62,6 +62,7 @@ favLimg.classList.add("favL");
 
 let cardLimg = document.createElement('img');
 cardLimg.setAttribute('src','imgDucksProducts/front_london.jpg');
+cardLimg.classList.add("cardLimg")
 
 productImgFavContainer.appendChild(favLimg);
 productImgFavContainer.appendChild(cardLimg);
@@ -113,6 +114,9 @@ buttonBuyNow.type = 'button';
 buttonBuyNow.innerText = "Comprar ahora";
 buttonBuyNow.classList.add("buttonBuyNow");
 
+let productButtonsContantiner = document.createElement('div');
+productButtonsContantiner.classList.add("productButtonsContantiner")
+
 let buttonBuyNowImg = document.createElement('img');
 buttonBuyNowImg.setAttribute("src","../../assets/icons/+button.svg");
 
@@ -131,13 +135,16 @@ productTitleAmmountButtonContatiner.appendChild(cardLtitlle);
 productTitleAmmountButtonContatiner.appendChild(buttonProductAmmount);
 cardL.appendChild(priceL);
 cardL.appendChild(cardDescription);
-document.body.appendChild(buttonAddToCard);
-document.body.appendChild(buttonBuyNow);
+cardL.appendChild(productButtonsContantiner)
+productButtonsContantiner.appendChild(buttonAddToCard);
+productButtonsContantiner.appendChild(buttonBuyNow);
 
 productImgViewsContainer.appendChild(v1);
 productImgViewsContainer.appendChild(v2);
 productImgViewsContainer.appendChild(v3);
 productImgViewsContainer.classList.add("porductImgViewsContainer");
+
+
 
 /* {
     cardL.innerhtml +=`

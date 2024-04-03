@@ -23,12 +23,12 @@
     
 .product-img-Fav-container {
     display: flex;
+    width: 100%;
 }
 
 #favL {
 width: 50px;
 height: auto;
-
 background-color: none;
 border: none;
 display: flex;
@@ -55,8 +55,12 @@ right: 0;
 }
 .cardL{
     font-family: 'Open Sans', sans-serif;
-    border: solid 1px red;
+    border: solid 1px red;}
+
+.cardLimg {
+    width: auto;
 }
+
 .priceL {
     color: var(--orange-duck);
     font-size: 1.5625rem;

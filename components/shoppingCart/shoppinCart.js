@@ -1,0 +1,78 @@
+window.onload = () =>{
+
+    let allProducts = [];
+
+    const countProducts = document.querySelector('.count-products');
+    const rowProduct = document.querySelector('.row-product')
+    const button = document.querySelector('.buttonAddToCard');
+    button.addEventListener('click', (e)=>{
+        if(e.target.classList.contains('buttonAddToCard')){
+            const product = e.target.parentElement.parentElement;
+            const infoProduct ={
+                quantity: 1,
+                title: product.querySelector('.card-tittle').textContent,
+                price: product.querySelector('.priceL').textContent,
+            }
+            const exists = allProducts.some(product =>  product.title === infoProduct.title)
+            if(exists){
+                const products = allProducts.map(product =>{
+                    if(product.title === infoProduct.title){
+                        product.quantity++;
+                        return product;
+                    }else{
+                        return product
+                    }
+                })
+                allProducts = [...products]
+            }else{
+                allProducts = [...allProducts, infoProduct];
+                console.log(allProducts);
+            }
+            
+            showHtml();
+        }
+    })
+
+
+    const showHtml = () =>{
+        rowProduct.innerHTML = '';
+        let total = 0;
+        let totaProducts = 0;
+        allProducts.forEach(product =>{
+            const cartConainer = document.createElement('div');
+            cartConainer.classList.add('cart-product');
+
+            cartConainer.innerHTML =`
+            <div class="info-cart-product">
+            <span class="cantidad-producto-carrito">${product.quantity}</span>
+            <p class="titulo-producto-carrito">${product.title}</p>
+            <span class="precio-producto-carrito">${product.price}</span>
+            </div>
+        <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="icon-close"
+        >
+            <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M6 18L18 6M6 6l12 12"
+            />
+        </svg>
+            
+            `
+            // rowProduct.append(cartConainer);
+
+            totaProducts = totaProducts + product.quantity;
+        });
+        countProducts.innerText = totaProducts;
+
+    }
+        
+}
+    
+
+

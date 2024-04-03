@@ -60,6 +60,14 @@ carIcon.setAttribute("src", "../../assets/img/car.svg");
 carIcon.setAttribute("alt", "shopping-car-icon");
 subMenuDiv.appendChild(carIcon);
 
+const countProducts = document.createElement('span');
+countProducts.classList.add('count-products');
+countProducts.textContent = 0;
+subMenuDiv.appendChild(countProducts);
+
+const productsCard= document.createElement('div');
+productsCard.classList.add('row-product');
+subMenuDiv.appendChild(productsCard);
 // Añadir el div del sub-menú al header
 header.appendChild(subMenuDiv);
 

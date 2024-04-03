@@ -75,5 +75,5 @@ mostSoldData.forEach((product) => {
 });
 
 // Agregar la sección al documento
-const container = document.querySelector(".most-sold-container");
-container.appendChild(mostSoldSection);
+// const container = document.querySelector(".most-sold-container");
+// container.appendChild(mostSoldSection);

@@ -9,6 +9,8 @@ body {
 }
 
 header {
+  position: fixed;
+  z-index: 100;
   display: flex;
   align-items: center;
   background-color: #ffd801;
@@ -16,6 +18,8 @@ header {
   height: 7vh;
   margin: 0;
   padding: 0;
+  top: 0;
+  left: 0;
 }
 .sidebar {
   display: flex;
@@ -50,23 +54,25 @@ header {
   width: 40%;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: flex-end;
+  margin-right: 0.5em;
+  gap: 1em;
 }
 .header-icon {
-  height: 40%;
-  width: 20%;
+  height: 44%;
+  width: 19%;
 }
 
 #menu-mobile {
   display: none;
-  position: absolute;
+  position: inherit;
   top: 0;
   left: 0;
   width: 80vw;
   height: 100vh;
   background-color: #ffd801;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  z-index: 2;
+  z-index: 200;
 }
 
 #menu-mobile ul {
@@ -110,7 +116,3 @@ li:active {
   margin-left: 5%;
 }
 
-#sub-menu {
-  display: flex;
-  gap: 1em;
-}

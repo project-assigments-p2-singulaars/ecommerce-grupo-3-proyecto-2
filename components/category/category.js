@@ -20,6 +20,8 @@ const categoryData = [
 
 // const divCategoryContainer = document.getElementsByClassName("category-container");
 
+const categoryContainer = document.querySelector(".category-grid-container");
+
 // Crear cada elemento de categoría
 categoryData.forEach((category) => {
   const categoryGridItem = document.createElement("div");
@@ -34,9 +36,5 @@ categoryData.forEach((category) => {
   categoryImage.src = category.imageUrl;
   categoryGridItem.appendChild(categoryImage);
 
-  categoryGridContainer.appendChild(categoryGridItem);
+  categoryContainer.appendChild(categoryGridItem);
 });
-
-// Agregar la sección al documento
-const container = document.querySelector(".category-container");
-container.appendChild(categorySection);

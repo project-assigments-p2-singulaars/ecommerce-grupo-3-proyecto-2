@@ -1,26 +1,26 @@
 const mostSoldData = [
   {
-    imageUrl: "./assets/img/ducks/pipi.png",
+    imageUrl: "../../assets/img/ducks/pipi.png",
     productName: "PIPI",
     productPrice: "8,00€",
   },
   {
-    imageUrl: "./assets/img/ducks/londres.jpg",
+    imageUrl: "../../assets/img/ducks/londres.jpg",
     productName: "LONDRES",
     productPrice: "8,00€",
   },
   {
-    imageUrl: "./assets/img/ducks/donut.png",
+    imageUrl: "../../assets/img/ducks/donut.png",
     productName: "DONUT",
     productPrice: "8,00€",
   },
   {
-    imageUrl: "./assets/img/ducks/chewaka-duck.png",
+    imageUrl: "../../assets/img/ducks/chewaka-duck.png",
     productName: "CHEWAKA",
     productPrice: "8,00€",
   },
   {
-    imageUrl: "./assets/img/ducks/ducktrix.png",
+    imageUrl: "../../assets/img/ducks/ducktrix.png",
     productName: "MATRIX",
     productPrice: "8,00€",
   },

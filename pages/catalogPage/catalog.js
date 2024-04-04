@@ -2,6 +2,7 @@ fetch('../../db.json')
     .then(response => response.json())
     .then(data => {
         const products = data.products;
+        const catalogGrid = document.querySelector(".catalog-grid")
 
         products.forEach(product => {
             let cardS = document.createElement("div");
@@ -29,7 +30,7 @@ fetch('../../db.json')
             cardS.appendChild(cardTitle);
             cardS.appendChild(cardPrice);
 
-            document.body.appendChild(cardS);
+            catalogGrid.appendChild(cardS);
         });
     })
     .catch(error => console.error('Error al cargar los datos:', error));

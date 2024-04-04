@@ -3,6 +3,10 @@
 body {
   margin: 0;
 }
+footer {
+  bottom: 0;
+  width: 100%; /* Ancho completo del footer */
+}
 
 #duck-footer {
   /* background-color: #FFD801; */
@@ -12,6 +16,7 @@ body {
   margin-right: 10vw;
   margin-top: 10vh;
 }
+
 #duck-text-box {
   background-color: #ffd801;
   width: 60%;
@@ -70,7 +75,8 @@ body {
   margin-left: 5%;
   margin-right: 5%;
   text-align: center;
-  margin-bottom: 10%;
   padding-bottom: 5%;
   font-size: 0.85rem;
 }
+
+

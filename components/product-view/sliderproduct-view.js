@@ -37,12 +37,12 @@ mostSoldSection.appendChild(mostSoldTitle);
 
 const title1 = document.createElement("span");
 title1.classList.add("most-sold-title1");
-title1.textContent = "LOS PATITOS";
+title1.textContent = "TAMBIEN TE PUEDE";
 mostSoldTitle.appendChild(title1);
 
 const title2 = document.createElement("span");
 title2.classList.add("most-sold-title2");
-title2.textContent = "MÁS VENDIDOS";
+title2.textContent = "INTERESAR";
 mostSoldTitle.appendChild(title2);
 
 // Crear el contenedor del carrusel de productos
@@ -75,5 +75,5 @@ mostSoldData.forEach((product) => {
 });
 
 // Agregar la sección al documento
-const container = document.querySelector(".most-sold-container");
+const container = document.querySelector("#cardSlider");
 container.appendChild(mostSoldSection);

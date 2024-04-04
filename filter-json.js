@@ -8,13 +8,38 @@ function buscarProducto() {
   fetch(url)
     .then(response => response.json())
     .then(data => {
-      const productos = data.productos.filter(producto => producto.title.toLowerCase().includes(inputTitulo));
+      const productos = data.products.filter(producto => producto.title.toLowerCase().includes(inputTitulo));
       if (productos.length === 0) {
         console.log('No se encontraron productos con ese título.');
       } else {
-        console.log('Resultados de la búsqueda:');
+        
         productos.forEach(producto => {
-          console.log(producto);
+          
+          let cardS = document.createElement("div");
+          cardS.classList.add("cardS");
+          
+          let favImg = document.createElement('img');
+          favImg.setAttribute("src", "components/cardsProducts/imgDucksProducts/Favorite1.svg")
+          favImg.setAttribute("id", "favS")
+          
+          let cardImg = document.createElement('img');
+          cardImg.setAttribute("src", producto['front-image']);
+          cardImg.classList.add('cardS-image')
+          
+          let cardTittle = document.createElement('p');
+          cardTittle.textContent=producto.title;
+          cardTittle.classList.add("card-title")
+          
+          let cardPrice = document.createElement('p');
+          cardPrice.textContent=producto.price;
+          cardPrice.classList.add("priceL")
+          
+          cardS.appendChild(favImg);
+          cardS.appendChild(cardImg);
+          cardS.appendChild(cardTittle);
+          cardS.appendChild(cardPrice);
+               
+          document.body.appendChild(cardS);
         });
       }
     })
@@ -22,6 +47,7 @@ function buscarProducto() {
       console.error('Error al obtener los productos:', error);
     });
 }
+
 
 function getProductosPorCategoria(categoria) {
   fetch(url)
@@ -37,5 +63,3 @@ function getProductosPorCategoria(categoria) {
 
 
 
-getProductosPorCategoria('Cultural');
-getProductosPorTitulo('DONUT');

@@ -5,7 +5,7 @@
         "title": "PIPI",
         "price": 8.00,
         "description": "Patito inspirado en la popular personaje de Pipi Calzas Largas. Ideal para nostálgicos de los 80 con childhood issues.",
-        "front-image": "./img/ducks/pipi.png",
+        "front-image": "./assets/img/pipi.png",
         "image-v1": "./img/ducks/pipi-v1.png",
         "image-v2": "./img/ducks/pipi-v2.png",
         "image-v3": "./img/ducks/pipi-v3.png",
@@ -83,6 +83,7 @@
         "image-v3": "",
         "category": "Film",
         "stock": 10
+        
       },
       {
         "id": 8,
@@ -98,3 +99,4 @@
       }
     ]
   }
+  

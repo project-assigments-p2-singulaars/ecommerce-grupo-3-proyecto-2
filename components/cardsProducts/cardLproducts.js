@@ -1,42 +1,16 @@
-
-let cardS = document.createElement("div");
-cardS.classList.add("cardS");
-
-let favImg = document.createElement('img');
-favImg.setAttribute("src", "./imgDucksProducts/Favorite1.svg")
-
-let cardImg = document.createElement('img');
-cardImg.setAttribute("src","imgDucksProducts/front_london.jpg");
-cardImg.classList.add('cardS-image')
-
-let cardTitle = document.createElement('p');
-cardTitle.textContent="London";
-cardTitle.classList.add("card-title")
-
-let cardPrice = document.createElement('p');
-cardPrice.textContent="8 €";
-
-cardS.appendChild(favImg);
-cardS.appendChild(cardImg);
-cardS.appendChild(cardTitle);
-cardS.appendChild(cardPrice);
-     
-document.body.appendChild(cardS);
-
-
+console.log("hol")
 let cardL = document.createElement('section');
-cardL.classList.add("cardL");
+cardL.classList.add("cardL")
 
 let productImgFavContainer = document.createElement('div');
 
 
 let favLimg = document.createElement('img');
-favLimg.setAttribute("src","./imgDucksProducts/Favorite1.svg");
+favLimg.setAttribute("src","../../assets/icons/Favorite1.svg");
 favLimg.classList.add("favL");
 
 let cardLimg = document.createElement('img');
-cardLimg.setAttribute('src','imgDucksProducts/front_london.jpg');
-cardLimg.classList.add("cardLimg")
+cardLimg.setAttribute('src','../../assets/img/ducks/front_london.jpg');
 
 productImgFavContainer.appendChild(favLimg);
 productImgFavContainer.appendChild(cardLimg);
@@ -45,16 +19,16 @@ let productImgViewsContainer = document.createElement('div');
 
 
 let v1 = document.createElement('img');
-v1.setAttribute("src","./imgDucksProducts/v1_london.jpg");
+v1.setAttribute("src","../../assets/img/ducks/v1_london.jpg");
 v1.classList.add("v1");
 
 
 let v2 = document.createElement('img')
-v2.setAttribute("src","./imgDucksProducts/v2_london.jpg");
+v2.setAttribute("src","../../assets/img/ducks/v2_london.jpg");
 v2.classList.add("v2")
 
 let v3 = document.createElement('img');
-v3.setAttribute("src","./imgDucksProducts/v3_london.jpg");
+v3.setAttribute("src","../../assets/img/ducks/v3_london.jpg");
 v3.classList.add("v3");
 
 let cardLtitlle = document.createElement('p');
@@ -88,14 +62,14 @@ buttonBuyNow.type = 'button';
 buttonBuyNow.innerText = "Comprar ahora";
 buttonBuyNow.classList.add("buttonBuyNow");
 
-let productButtonsContantiner = document.createElement('div');
-productButtonsContantiner.classList.add("productButtonsContantiner")
-
 let buttonBuyNowImg = document.createElement('img');
 buttonBuyNowImg.setAttribute("src","../../assets/icons/+button.svg");
 
 let buttonAddToCardImg = document.createElement('img');
 buttonAddToCardImg.setAttribute("src","../../assets/icons/shopping-card-button.svg");
+
+let productButtonsContantiner = document.createElement('div');
+productButtonsContantiner.classList.add("productButtonsContantiner");
 
 buttonAddToCard.appendChild(buttonAddToCardImg);
 buttonBuyNow.appendChild(buttonBuyNowImg);
@@ -117,8 +91,6 @@ productImgViewsContainer.appendChild(v1);
 productImgViewsContainer.appendChild(v2);
 productImgViewsContainer.appendChild(v3);
 productImgViewsContainer.classList.add("porductImgViewsContainer");
-
-
 
 /* {
     cardL.innerhtml +=`

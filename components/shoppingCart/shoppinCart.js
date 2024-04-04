@@ -1,10 +1,19 @@
 window.onload = () =>{
 
     let allProducts = [];
-
+    const cartMenu = document.getElementById('cart-icon');
     const countProducts = document.querySelector('.count-products');
     const rowProduct = document.querySelector('.row-product')
     const button = document.querySelector('.buttonAddToCard');
+    const cartDiv = document.querySelector('.container-cart-products')
+    cartMenu.addEventListener('click', ()=>{
+        if(cartDiv.style.display === 'block'){
+            cartDiv.style.display = 'none';
+        }else{
+            return cartDiv.style.display = 'block'
+        }
+    });
+
     button.addEventListener('click', (e)=>{
         if(e.target.classList.contains('buttonAddToCard')){
             const product = e.target.parentElement.parentElement;
@@ -12,6 +21,7 @@ window.onload = () =>{
                 quantity: 1,
                 title: product.querySelector('.card-tittle').textContent,
                 price: product.querySelector('.priceL').textContent,
+                img: product.querySelector('.v1')
             }
             const exists = allProducts.some(product =>  product.title === infoProduct.title)
             if(exists){
@@ -32,19 +42,32 @@ window.onload = () =>{
             showHtml();
         }
     })
+    rowProduct.addEventListener('click', (e) =>{
+        if (e.target.classList.contains('icon-close')) {
+            const product = e.target.parentElement;
+            const divTitle = product.querySelector('.info-cart-product');
+            const title = divTitle.querySelector('p').textContent;
+            
+            console.log(title)
 
+            allProducts = allProducts.filter(product => product.title !== title)
+        }
+    })
 
     const showHtml = () =>{
         rowProduct.innerHTML = '';
         let total = 0;
         let totaProducts = 0;
         allProducts.forEach(product =>{
+            let price= product.price;
+            let priceToString = price.replace('€','').trim();
             const cartConainer = document.createElement('div');
             cartConainer.classList.add('cart-product');
 
             cartConainer.innerHTML =`
             <div class="info-cart-product">
             <span class="cantidad-producto-carrito">${product.quantity}</span>
+            <img class='carrito-img' src=${product.img.src} />
             <p class="titulo-producto-carrito">${product.title}</p>
             <span class="precio-producto-carrito">${product.price}</span>
             </div>
@@ -64,12 +87,12 @@ window.onload = () =>{
         </svg>
             
             `
-            // rowProduct.append(cartConainer);
-
+          rowProduct.append(cartConainer);
+            total = total + parseInt(product.quantity * priceToString);
             totaProducts = totaProducts + product.quantity;
         });
         countProducts.innerText = totaProducts;
-
+        console.log(total);
     }
         
 }

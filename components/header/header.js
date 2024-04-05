@@ -30,7 +30,7 @@ titleLogoDiv.appendChild(logoImg);
 
 // Crear el título "Duck U"
 const title = document.createElement("img");
-title.setAttribute("src", "./assets/img/duck-u-logo.png");
+title.setAttribute("src", "../../assets/img/duck-u-logo.png");
 title.setAttribute("id", "duck-u-logo");
 titleLogoDiv.appendChild(title);
 
@@ -42,11 +42,71 @@ const subMenuDiv = document.createElement("div");
 subMenuDiv.setAttribute("id", "sub-menu");
 
 // Crear las imágenes de los íconos del sub-menú
+
 const searchIcon = document.createElement("img");
 searchIcon.classList.add("header-icon");
 searchIcon.setAttribute("src", "../../assets/img/mag.svg");
 searchIcon.setAttribute("alt", "magnifying-glass-icon");
 subMenuDiv.appendChild(searchIcon);
+
+searchIcon.addEventListener("click", (event) => {
+  // Verifica si el input ya está visible
+  const isInputVisible = document.querySelector(".search-input");
+
+  // Si el input ya está visible, lo oculta y sale de la función
+  if (isInputVisible) {
+    document.querySelector(".search-input").remove();
+    document.querySelector(".search-button").remove();
+    searchIcon.style.display = "inline"; // Muestra nuevamente el icono de búsqueda
+    return;
+  }
+
+  const searchContainer = document.createElement("div");
+  searchContainer.classList.add("search-container");
+  // Crear el input de búsqueda
+  const searchInput = document.createElement("input");
+  searchInput.setAttribute("type", "text");
+  searchInput.setAttribute("placeholder", "Buscar...");
+  searchInput.classList.add("search-input");
+
+  // Crear el botón de búsqueda
+  const searchButton = document.createElement("button");
+  searchButton.textContent = "Buscar";
+  searchButton.classList.add("search-button");
+
+  // Agregar el input y el botón al contenedor
+  searchContainer.appendChild(searchInput);
+  searchContainer.appendChild(searchButton);
+
+  // Agregar el input y el botón al header
+  header.appendChild(searchInput);
+  header.appendChild(searchButton);
+
+  // Ocultar el ícono de búsqueda
+  searchIcon.style.display = "none";
+
+  // Agregar el evento de clic al botón de búsqueda
+  searchButton.addEventListener("click", () => {
+    // Aquí puedes agregar el comportamiento de búsqueda
+    // Por ejemplo, obtener el valor del input y realizar una acción
+    const searchText = searchInput.value;
+    console.log("Búsqueda:", searchText);
+  });
+});
+
+// Función para ocultar el input y el botón cuando se haga clic en cualquier parte de la página
+document.addEventListener("click", (event) => {
+  // Si el clic no se hizo en el icono de búsqueda, el input o el botón de búsqueda, los oculta
+  if (
+    event.target !== searchIcon &&
+    event.target !== document.querySelector(".search-input") &&
+    event.target !== document.querySelector(".search-button")
+  ) {
+    document.querySelector(".search-input")?.remove();
+    document.querySelector(".search-button")?.remove();
+    searchIcon.style.display = "inline"; // Muestra nuevamente el icono de búsqueda
+  }
+});
 
 const favoritesIcon = document.createElement("img");
 favoritesIcon.classList.add("header-icon");
@@ -100,6 +160,7 @@ categories.forEach((category) => {
   const a = document.createElement("a");
   a.classList.add("category");
   a.textContent = category;
+  a.setAttribute("onclick", "guardarValor(this)");
 
   li.appendChild(duckListIcon);
   li.appendChild(a);

@@ -17,6 +17,7 @@
         "title": "LONDRES",
         "price": 8.00,
         "description": "Patito para que puedas decir que has visitado Londres sin haber hecho necesariamente. El de EEUU es demasiado Mainstream.",
+
         "image1": "../../assets/img/ducks/londres.jpg",
         "imagev1": "./img/ducks/londres-v1.png",
         "imagev2": "./img/ducks/londres-v2.png",

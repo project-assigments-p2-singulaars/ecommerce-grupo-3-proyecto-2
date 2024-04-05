@@ -164,3 +164,20 @@ function buscarProducto(parametro) {
     window.location.href = "catalog.html";
   
   }
+
+  function guardarValorYRedireccionar() {
+    // Capturar el valor del input
+    let valor = document.getElementById("inputTitulo").value;
+  
+    if (valor === "") {
+      
+    } else {
+       // Guardar el valor en sessionStorage
+      sessionStorage.setItem("miValor", valor);
+    
+      // Redireccionar a otra página HTML
+      window.location.href = "catalog.html";
+  
+    }
+   
+  }

@@ -42,7 +42,6 @@ const subMenuDiv = document.createElement("div");
 subMenuDiv.setAttribute("id", "sub-menu");
 
 // Crear las imágenes de los íconos del sub-menú
-
 const searchIcon = document.createElement("img");
 searchIcon.classList.add("header-icon");
 searchIcon.setAttribute("src", "../../assets/img/mag.svg");
@@ -66,13 +65,17 @@ searchIcon.addEventListener("click", (event) => {
   // Crear el input de búsqueda
   const searchInput = document.createElement("input");
   searchInput.setAttribute("type", "text");
-  searchInput.setAttribute("placeholder", "Buscar...");
+  searchInput.setAttribute("id", "search-input");
   searchInput.classList.add("search-input");
+  searchInput.setAttribute("placeholder", "Buscar...");
+  searchInput.setAttribute("required", "");
 
   // Crear el botón de búsqueda
   const searchButton = document.createElement("button");
+  searchButton.setAttribute("type", "submit");
   searchButton.textContent = "Buscar";
   searchButton.classList.add("search-button");
+  searchButton.addEventListener("click", guardarValorYRedireccionar);
 
   // Agregar el input y el botón al contenedor
   searchContainer.appendChild(searchInput);
@@ -81,6 +84,8 @@ searchIcon.addEventListener("click", (event) => {
   // Agregar el input y el botón al header
   header.appendChild(searchInput);
   header.appendChild(searchButton);
+
+  header.appendChild(searchContainer);
 
   // Ocultar el ícono de búsqueda
   searchIcon.style.display = "none";
@@ -116,18 +121,18 @@ subMenuDiv.appendChild(favoritesIcon);
 
 const carIcon = document.createElement("img");
 carIcon.classList.add("header-icon");
-carIcon.setAttribute('id','cart-icon')
+carIcon.setAttribute("id", "cart-icon");
 carIcon.setAttribute("src", "../../assets/img/car.svg");
 carIcon.setAttribute("alt", "shopping-car-icon");
 subMenuDiv.appendChild(carIcon);
 
-const countProducts = document.createElement('span');
-countProducts.classList.add('count-products');
+const countProducts = document.createElement("span");
+countProducts.classList.add("count-products");
 countProducts.textContent = 0;
 subMenuDiv.appendChild(countProducts);
 
-const productsCard= document.createElement('div');
-productsCard.classList.add('row-product');
+const productsCard = document.createElement("div");
+productsCard.classList.add("row-product");
 // Añadir el div del sub-menú al header
 header.appendChild(subMenuDiv);
 
@@ -175,13 +180,11 @@ categories.forEach((category) => {
   ul.appendChild(li);
 });
 
-
 // menu carrito
-const carrito = document.createElement('div');
-carrito.classList.add('container-cart-products')
-carrito.appendChild(productsCard)
+const carrito = document.createElement("div");
+carrito.classList.add("container-cart-products");
+carrito.appendChild(productsCard);
 subMenuDiv.appendChild(carrito);
-
 
 // const totalPagar
 

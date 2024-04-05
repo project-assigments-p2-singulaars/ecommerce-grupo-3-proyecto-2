@@ -8,7 +8,7 @@ function guardarValorYRedireccionar() {
     sessionStorage.setItem("miValor", valor);
 
     // Redireccionar a otra página HTML
-    window.location.href = "./pages/catalogPage/catalog.html";
+    window.location.href = "../../pages/catalogPage/catalog.html";
   }
 }
 
@@ -16,5 +16,5 @@ function guardarValor(enlace) {
   enlaceClicado = enlace.textContent;
   sessionStorage.setItem("enlaceClicado", enlaceClicado);
 
-  window.location.href = "./pages/catalogPage/catalog.html";
+  window.location.href = "../../pages/catalogPage/catalog.html";
 }

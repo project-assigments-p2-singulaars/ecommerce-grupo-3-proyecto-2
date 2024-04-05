@@ -1,4 +1,3 @@
-console.log("hol")
 let cardL = document.createElement('section');
 cardL.classList.add("cardL")
 
@@ -11,6 +10,7 @@ favLimg.classList.add("favL");
 
 let cardLimg = document.createElement('img');
 cardLimg.setAttribute('src','../../assets/img/ducks/front_london.jpg');
+cardLimg.classList.add("product-img-Fav-container");
 
 productImgFavContainer.appendChild(favLimg);
 productImgFavContainer.appendChild(cardLimg);

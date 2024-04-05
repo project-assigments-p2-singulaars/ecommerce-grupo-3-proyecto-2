@@ -1,5 +1,6 @@
-// let cardL = document.createElement('section');
-// cardL.classList.add("cardL")
+
+let cardL = document.createElement('section');
+cardL.classList.add("cardL")
 
 // let productImgFavContainer = document.createElement('div');
 

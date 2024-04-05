@@ -21,6 +21,30 @@ header {
   top: 0;
   left: 0;
 }
+
+.search-container {
+  border: 1px solid red;
+}
+
+.search-input {
+  width: 8rem;
+  height: 1.7rem;
+  border-radius: 8px;
+  border: none;
+  margin-right: 0.5rem;
+}
+
+.search-button {
+  width: 6rem;
+  height: 1.7rem;
+  background-color: #ed821d;
+  color: white;
+  border-radius: 8px;
+  border: none;
+  font-family: "Passion One", sans-serif;
+  font-size: 1rem;
+}
+
 .sidebar {
   display: flex;
   align-items: center;

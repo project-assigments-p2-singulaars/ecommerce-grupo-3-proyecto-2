@@ -1,26 +1,26 @@
 const mostSoldData = [
   {
-    imageUrl: "./assets/img/ducks/pipi.png",
+    imageUrl: "../../assets/img/ducks/pipi.png",
     productName: "PIPI",
     productPrice: "8,00€",
   },
   {
-    imageUrl: "./assets/img/ducks/londres.jpg",
+    imageUrl: "../../assets/img/ducks/londres.jpg",
     productName: "LONDRES",
     productPrice: "8,00€",
   },
   {
-    imageUrl: "./assets/img/ducks/donut.png",
+    imageUrl: "../../assets/img/ducks/donut.png",
     productName: "DONUT",
     productPrice: "8,00€",
   },
   {
-    imageUrl: "./assets/img/ducks/chewaka-duck.png",
+    imageUrl: "../../assets/img/ducks/chewaka-duck.png",
     productName: "CHEWAKA",
     productPrice: "8,00€",
   },
   {
-    imageUrl: "./assets/img/ducks/ducktrix.png",
+    imageUrl: "../../assets/img/ducks/ducktrix.png",
     productName: "MATRIX",
     productPrice: "8,00€",
   },
@@ -37,12 +37,12 @@ mostSoldSection.appendChild(mostSoldTitle);
 
 const title1 = document.createElement("span");
 title1.classList.add("most-sold-title1");
-title1.textContent = "LOS PATITOS";
+title1.textContent = "TAMBIEN TE PUEDE";
 mostSoldTitle.appendChild(title1);
 
 const title2 = document.createElement("span");
 title2.classList.add("most-sold-title2");
-title2.textContent = "MÁS VENDIDOS";
+title2.textContent = "INTERESAR";
 mostSoldTitle.appendChild(title2);
 
 // Crear el contenedor del carrusel de productos
@@ -75,5 +75,5 @@ mostSoldData.forEach((product) => {
 });
 
 // Agregar la sección al documento
-// const container = document.querySelector(".most-sold-container");
-// container.appendChild(mostSoldSection);
+const container = document.querySelector("#cardSlider");
+container.appendChild(mostSoldSection);

@@ -1,65 +1,28 @@
-// URL del servidor JSON
-const url = 'db.json';
+function guardarValorYRedireccionar() {
+  // Capturar el valor del input
+  let valor = document.getElementById("inputTitulo").value;
 
-// Función para buscar productos por título
-function buscarProducto() {
-  const inputTitulo = document.getElementById('inputTitulo').value.toLowerCase();
+  if (valor === "") {
+    
+  } else {
+     // Guardar el valor en sessionStorage
+    sessionStorage.setItem("miValor", valor);
   
-  fetch(url)
-    .then(response => response.json())
-    .then(data => {
-      const productos = data.products.filter(producto => producto.title.toLowerCase().includes(inputTitulo));
-      if (productos.length === 0) {
-        console.log('No se encontraron productos con ese título.');
-      } else {
-        
-        productos.forEach(producto => {
-          
-          let cardS = document.createElement("div");
-          cardS.classList.add("cardS");
-          
-          let favImg = document.createElement('img');
-          favImg.setAttribute("src", "components/cardsProducts/imgDucksProducts/Favorite1.svg")
-          favImg.setAttribute("id", "favS")
-          
-          let cardImg = document.createElement('img');
-          cardImg.setAttribute("src", producto['front-image']);
-          cardImg.classList.add('cardS-image')
-          
-          let cardTittle = document.createElement('p');
-          cardTittle.textContent=producto.title;
-          cardTittle.classList.add("card-title")
-          
-          let cardPrice = document.createElement('p');
-          cardPrice.textContent=producto.price;
-          cardPrice.classList.add("priceL")
-          
-          cardS.appendChild(favImg);
-          cardS.appendChild(cardImg);
-          cardS.appendChild(cardTittle);
-          cardS.appendChild(cardPrice);
-               
-          document.body.appendChild(cardS);
-        });
-      }
-    })
-    .catch(error => {
-      console.error('Error al obtener los productos:', error);
-    });
+    // Redireccionar a otra página HTML
+    window.location.href = "./pages/catalogPage/catalog.html";
+
+  }
+ 
 }
 
+function guardarValor(enlace) {
+  enlaceClicado = enlace.textContent;
+  sessionStorage.setItem("enlaceClicado", enlaceClicado);
+  
+  window.location.href = "./pages/catalogPage/catalog.html";
 
-function getProductosPorCategoria(categoria) {
-  fetch(url)
-    .then(response => response.json())
-    .then(data => {
-      const productosFiltrados = data.productos.filter(producto => producto.category === categoria);
-      console.log(productosFiltrados);
-    })
-    .catch(error => {
-      console.error('Error al obtener los productos:', error);
-    });
 }
+
 
 
 

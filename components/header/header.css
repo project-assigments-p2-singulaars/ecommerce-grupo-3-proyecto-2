@@ -21,6 +21,30 @@ header {
   top: 0;
   left: 0;
 }
+
+.search-container {
+  border: 1px solid red;
+}
+
+.search-input {
+  width: 8rem;
+  height: 1.7rem;
+  border-radius: 8px;
+  border: none;
+  margin-right: 0.5rem;
+}
+
+.search-button {
+  width: 6rem;
+  height: 1.7rem;
+  background-color: #ed821d;
+  color: white;
+  border-radius: 8px;
+  border: none;
+  font-family: "Passion One", sans-serif;
+  font-size: 1rem;
+}
+
 .sidebar {
   display: flex;
   align-items: center;
@@ -57,6 +81,17 @@ header {
   justify-content: flex-end;
   margin-right: 0.5em;
   gap: 1em;
+}
+
+.count-products{
+  background-color: aliceblue;
+  height: 22px;
+  width: 22px;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 150;
+  display: flex;
+  justify-content: center;
 }
 .header-icon {
   height: 44%;
@@ -116,3 +151,77 @@ li:active {
   margin-left: 5%;
 }
 
+.count-products{
+  position: absolute;
+  top: 55%;
+  right: 0;
+
+  background-color: #000;
+  color: #fff;
+  width: 25px;
+  height: 25px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+#contador-productos{
+  font-size: 12px;
+}
+
+.container-cart-products{
+  display: none;
+  position: absolute;
+  top: 50px;
+  right: 0;
+
+  background-color: #fff;
+  width: 400px;
+  z-index: 1;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
+  border-radius: 10px;
+  
+}
+
+.cart-product{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
+
+  border-bottom: 1px solid rgba(0, 0, 0, 0.20);
+
+}
+
+.info-cart-product{
+  display: flex;
+  justify-content: space-between;
+  flex: 0.8;
+}
+
+.titulo-producto-carrito{
+  font-size: 20px;
+}
+
+.precio-producto-carrito{
+  font-weight: 700;
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+.cantidad-producto-carrito{
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.icon-close{
+  width: 25px;
+  height: 25px;
+}
+
+.carrito-img{
+  width: 30px;
+  height: 30px;
+}

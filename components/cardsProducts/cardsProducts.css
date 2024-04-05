@@ -23,12 +23,12 @@
     
 .product-img-Fav-container {
     display: flex;
+    width: 100%;
 }
 
 #favL {
 width: 50px;
 height: auto;
-
 background-color: none;
 border: none;
 display: flex;
@@ -54,8 +54,11 @@ right: 0;
     height: 80% ;
 }
 .cardL{
+    margin-top: 5%;
     font-family: 'Open Sans', sans-serif;
+    width: 90%;
 }
+
 .priceL {
     color: var(--orange-duck);
     font-size: 1.5625rem;
@@ -101,7 +104,10 @@ right: 0;
     width: 4.5rem;
     height: 2.125rem;
     align-self: center;
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+gap: 20%;    
 }
 
 .productButtonsContantiner {

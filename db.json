@@ -21,7 +21,7 @@
         "image-v1": "./img/ducks/londres-v1.png",
         "image-v2": "./img/ducks/londres-v2.png",
         "image-v3": "./img/ducks/londres-v3.png",
-        "category": "Cultural",
+        "category": "CULTURA POP",
         "stock": 10
       },
       {
@@ -45,7 +45,7 @@
         "image-v1": "",
         "image-v2": "",
         "image-v3": "",
-        "category": "Cultural",
+        "category": "CULTURA POP",
         "stock": 10
       },
       {
@@ -94,7 +94,7 @@
         "image-v1": "",
         "image-v2": "",
         "image-v3": "",
-        "category": "Cultural",
+        "category": "CULTURA POP",
         "stock": 10
       }
     ]

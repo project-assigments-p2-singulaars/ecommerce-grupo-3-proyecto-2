@@ -160,6 +160,7 @@ categories.forEach((category) => {
   const a = document.createElement("a");
   a.classList.add("category");
   a.textContent = category;
+  a.setAttribute("onclick", "guardarValor(this)");
 
   li.appendChild(duckListIcon);
   li.appendChild(a);

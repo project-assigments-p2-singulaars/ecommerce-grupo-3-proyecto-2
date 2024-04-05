@@ -61,6 +61,8 @@ searchIcon.addEventListener("click", (event) => {
     return;
   }
 
+  const searchContainer = document.createElement("div");
+  searchContainer.classList.add("search-container");
   // Crear el input de búsqueda
   const searchInput = document.createElement("input");
   searchInput.setAttribute("type", "text");
@@ -71,6 +73,10 @@ searchIcon.addEventListener("click", (event) => {
   const searchButton = document.createElement("button");
   searchButton.textContent = "Buscar";
   searchButton.classList.add("search-button");
+
+  // Agregar el input y el botón al contenedor
+  searchContainer.appendChild(searchInput);
+  searchContainer.appendChild(searchButton);
 
   // Agregar el input y el botón al header
   header.appendChild(searchInput);

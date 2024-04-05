@@ -116,10 +116,18 @@ subMenuDiv.appendChild(favoritesIcon);
 
 const carIcon = document.createElement("img");
 carIcon.classList.add("header-icon");
+carIcon.setAttribute('id','cart-icon')
 carIcon.setAttribute("src", "../../assets/img/car.svg");
 carIcon.setAttribute("alt", "shopping-car-icon");
 subMenuDiv.appendChild(carIcon);
 
+const countProducts = document.createElement('span');
+countProducts.classList.add('count-products');
+countProducts.textContent = 0;
+subMenuDiv.appendChild(countProducts);
+
+const productsCard= document.createElement('div');
+productsCard.classList.add('row-product');
 // Añadir el div del sub-menú al header
 header.appendChild(subMenuDiv);
 
@@ -166,6 +174,16 @@ categories.forEach((category) => {
   li.appendChild(a);
   ul.appendChild(li);
 });
+
+
+// menu carrito
+const carrito = document.createElement('div');
+carrito.classList.add('container-cart-products')
+carrito.appendChild(productsCard)
+subMenuDiv.appendChild(carrito);
+
+
+// const totalPagar
 
 // Agregar el header al cuerpo del documento
 document.body.appendChild(header);

@@ -156,7 +156,7 @@ li:active {
   margin-left: 5%;
 }
 
-.count-products{
+.count-products {
   position: absolute;
   top: 50%;
   right: 0;
@@ -174,7 +174,7 @@ li:active {
   font-size: 12px;
 }
 
-.container-cart-products{
+.container-cart-products {
   position: absolute;
   top: 8vh;
   background-color: #fff;
@@ -199,30 +199,29 @@ li:active {
   flex: 0.95;
 }
 
-.titulo-producto-carrito{
+.titulo-producto-carrito {
   font-size: 5.5vw;
   font-weight: 550;
-
 }
 
-.precio-producto-carrito{
+.precio-producto-carrito {
   font-weight: 600;
   font-size: 5.8vw;
   margin-left: 1vw;
 }
 
-.cantidad-producto-carrito{
+.cantidad-producto-carrito {
   font-weight: 500;
   font-size: 5.5vw;
 }
 
-.icon-close{
+.icon-close {
   width: 7.5vw;
   height: 3.5vh;
   margin-left: 2.5vw;
 }
 
-.carrito-img{
+.carrito-img {
   width: 11vw;
   height: 5vh;
 }

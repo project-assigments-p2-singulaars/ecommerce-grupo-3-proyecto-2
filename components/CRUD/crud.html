@@ -1,34 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form</title>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script src="crud.js"></script>
 </head>
+
 <body>
-    <form>
+    <form id="add-product-form">
         <h2>NUEVO PRODUCTO</h2>
-        <div class="image-submit-content">
+        <div class="image-submit-container">
             <div class="empty-image-user"></div>
-            <input type="file" name="image1" >AÑADIR IMÁGENES</button>
+            <input type="file" name="input-image"></button>
         </div>
         <section class="form-data-content">
-            <input type="text" name="title" />
+            <input type="text" name="title" id="title" />
             <div class="category-price">
-                <select type="number" name="category">
-                    <option>CULTURA POP</option>
-                    <option>ARTISTAS</option>
-                    <option>PELÍCULAS</option>
-                    <option>PROGRAMACIÓN</option>
+                <select name="category" id="category">
+                    <option value="CULTURA POP">CULTURA POP</option>
+                    <option value="ARTISTAS">ARTISTAS</option>
+                    <option value="PELÍCULAS">PELÍCULAS</option>
+                    <option value="PROGRAMACIÓN">PROGRAMACIÓN</option>
                 </select>
-                <input type="numnber" name="price"/>
+                <input type="number" name="price" id="price" />
             </div>
-                <input type="text" name="description"/>
+            <input type="text" name="description" id="description" />
         </section>
         <button type="submit">PUBLICAR</button>
-        <input type="number" name="stock" min="1"/>
-    </form>    
+        <input type="number" name="stock" id="stock" min="1" />
+    </form>
+    <script src="crud.js"></script>
+
 </body>
+
 </html>

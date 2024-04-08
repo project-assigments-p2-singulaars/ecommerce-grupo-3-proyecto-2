@@ -45,10 +45,41 @@ let cardDescription = document.createElement("p");
 cardDescription.textContent =
   "Desde Londres este pato de goma viene cumpliendo todas las normativas de seguridad Europeas y puedes lamerlo sin riesgo y bañarte con él.";
 
-let buttonProductAmmount = document.createElement("button");
+/*let buttonProductAmmount = document.createElement("button");
 buttonProductAmmount.type = "button";
 buttonProductAmmount.innerText = "+ 1 -";
+buttonProductAmmount.classList.add("buttonProductAmmount");*/
+
+let buttonProductAmmount = document.createElement('div');
 buttonProductAmmount.classList.add("buttonProductAmmount");
+let spanMinus = document.createElement('span');
+spanMinus.classList.add("minusButton");
+let spanCounter = document.createElement('span');
+spanCounter.classList.add("counterNumber");
+let spanPlus = document.createElement('span');
+spanPlus.classList.add("plusButton");
+spanMinus.setAttribute("type", "button");
+spanPlus.setAttribute("type", "button");
+spanMinus.innerText = "-";
+spanCounter.innerText = 0;
+spanPlus.innerText = "+";
+
+spanPlus.addEventListener("click", (e)=>{
+      let currentCount = parseInt(spanCounter.innerText); 
+      currentCount += 1;
+      spanCounter.innerText = currentCount;
+    }
+)
+
+spanMinus.addEventListener("click", (e)=>{
+    let currentCount = parseInt(spanCounter.innerText); 
+    if (currentCount ===0 ) {
+        return
+    }
+    currentCount -= 1;
+    spanCounter.innerText = currentCount;
+  }
+)
 
 let buttonAddToCard = document.createElement("button");
 buttonAddToCard.type = "button";
@@ -79,6 +110,9 @@ document.body.appendChild(cardL);
 cardL.appendChild(productImgFavContainer);
 cardL.appendChild(productImgViewsContainer);
 cardL.appendChild(productTitleAmmountButtonContatiner);
+buttonProductAmmount.appendChild(spanMinus);
+buttonProductAmmount.appendChild(spanCounter);
+buttonProductAmmount.appendChild(spanPlus);
 productTitleAmmountButtonContatiner.appendChild(cardLtitlle);
 productTitleAmmountButtonContatiner.appendChild(buttonProductAmmount);
 cardL.appendChild(priceL);
@@ -91,3 +125,4 @@ productImgViewsContainer.appendChild(v1);
 productImgViewsContainer.appendChild(v2);
 productImgViewsContainer.appendChild(v3);
 productImgViewsContainer.classList.add("porductImgViewsContainer");
+

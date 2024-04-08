@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title> 
+</head>
+<body>
+    <form>
+        <h2>NUEVO PRODUCTO</h2>
+        <div class="empty-image-user"></div>
+            <label style="visibility:hidden;">AÑADIR IMÁGENES</label>
+            <input id="image1" type="file" accept="image/png, image/jpeg, image/jpg"/>
+            <img id="preview" src="" alt="Vista previa de la imagen" style="max-width: 200px; max-height: 200px;"/>
+        </div>
+        <section class="form-data-content">
+            <input type="text" id="title" />
+            <div class="category-price">
+                <select type="number" id="category">
+                    <option>CULTURA POP</option>
+                    <option>ARTISTAS</option>
+                    <option>PELÍCULAS</option>
+                    <option>PROGRAMACIÓN</option>
+                </select>
+                <input type="numnber" id="price"/>
+            </div>
+                <input type="text" id="description"/>
+        </section>
+        <button type="submit">PUBLICAR</button>
+        <input type="number" id="stock" min="1"/>
+    </form>    
+</body>
+</html>

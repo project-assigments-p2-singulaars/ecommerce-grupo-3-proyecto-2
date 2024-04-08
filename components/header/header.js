@@ -42,12 +42,15 @@ const subMenuDiv = document.createElement("div");
 subMenuDiv.setAttribute("id", "sub-menu");
 
 // Crear las imágenes de los íconos del sub-menú
-
 const searchIcon = document.createElement("img");
 searchIcon.classList.add("header-icon");
 searchIcon.setAttribute("src", "../../assets/img/mag.svg");
 searchIcon.setAttribute("alt", "magnifying-glass-icon");
 subMenuDiv.appendChild(searchIcon);
+
+const searchContainer = document.createElement("div");
+searchContainer.classList.add("search-container");
+searchContainer.style.display = "none";
 
 searchIcon.addEventListener("click", (event) => {
   // Verifica si el input ya está visible
@@ -57,55 +60,44 @@ searchIcon.addEventListener("click", (event) => {
   if (isInputVisible) {
     document.querySelector(".search-input").remove();
     document.querySelector(".search-button").remove();
+    document.querySelector(".search-container").remove();
     searchIcon.style.display = "inline"; // Muestra nuevamente el icono de búsqueda
     return;
   }
 
-  const searchContainer = document.createElement("div");
-  searchContainer.classList.add("search-container");
   // Crear el input de búsqueda
   const searchInput = document.createElement("input");
   searchInput.setAttribute("type", "text");
-  searchInput.setAttribute("placeholder", "Buscar...");
+  searchInput.setAttribute("id", "search-input");
   searchInput.classList.add("search-input");
+  searchInput.setAttribute("placeholder", "Buscar...");
+  searchInput.setAttribute("required", "");
 
   // Crear el botón de búsqueda
   const searchButton = document.createElement("button");
+  searchButton.setAttribute("type", "submit");
   searchButton.textContent = "Buscar";
   searchButton.classList.add("search-button");
+  searchButton.addEventListener("click", guardarValorYRedireccionar);
 
   // Agregar el input y el botón al contenedor
   searchContainer.appendChild(searchInput);
   searchContainer.appendChild(searchButton);
 
-  // Agregar el input y el botón al header
-  header.appendChild(searchInput);
-  header.appendChild(searchButton);
-
-  // Ocultar el ícono de búsqueda
-  searchIcon.style.display = "none";
+  header.appendChild(searchContainer);
 
   // Agregar el evento de clic al botón de búsqueda
   searchButton.addEventListener("click", () => {
-    // Aquí puedes agregar el comportamiento de búsqueda
-    // Por ejemplo, obtener el valor del input y realizar una acción
+    // se agrega el comportamiento de búsqueda
     const searchText = searchInput.value;
     console.log("Búsqueda:", searchText);
   });
 });
 
-// Función para ocultar el input y el botón cuando se haga clic en cualquier parte de la página
-document.addEventListener("click", (event) => {
-  // Si el clic no se hizo en el icono de búsqueda, el input o el botón de búsqueda, los oculta
-  if (
-    event.target !== searchIcon &&
-    event.target !== document.querySelector(".search-input") &&
-    event.target !== document.querySelector(".search-button")
-  ) {
-    document.querySelector(".search-input")?.remove();
-    document.querySelector(".search-button")?.remove();
-    searchIcon.style.display = "inline"; // Muestra nuevamente el icono de búsqueda
-  }
+searchIcon.addEventListener("click", () => {
+  if (searchContainer.style.display === "none") {
+    searchContainer.style.display = "flex";
+  } else return;
 });
 
 const favoritesIcon = document.createElement("img");
@@ -116,18 +108,18 @@ subMenuDiv.appendChild(favoritesIcon);
 
 const carIcon = document.createElement("img");
 carIcon.classList.add("header-icon");
-carIcon.setAttribute('id','cart-icon')
+carIcon.setAttribute("id", "cart-icon");
 carIcon.setAttribute("src", "../../assets/img/car.svg");
 carIcon.setAttribute("alt", "shopping-car-icon");
 subMenuDiv.appendChild(carIcon);
 
-const countProducts = document.createElement('span');
-countProducts.classList.add('count-products');
+const countProducts = document.createElement("span");
+countProducts.classList.add("count-products");
 countProducts.textContent = 0;
 subMenuDiv.appendChild(countProducts);
 
-const productsCard= document.createElement('div');
-productsCard.classList.add('row-product');
+const productsCard = document.createElement("div");
+productsCard.classList.add("row-product");
 // Añadir el div del sub-menú al header
 header.appendChild(subMenuDiv);
 
@@ -175,13 +167,11 @@ categories.forEach((category) => {
   ul.appendChild(li);
 });
 
-
 // menu carrito
-const carrito = document.createElement('div');
-carrito.classList.add('container-cart-products')
-carrito.appendChild(productsCard)
+const carrito = document.createElement("div");
+carrito.classList.add("container-cart-products");
+carrito.appendChild(productsCard);
 subMenuDiv.appendChild(carrito);
-
 
 // const totalPagar
 

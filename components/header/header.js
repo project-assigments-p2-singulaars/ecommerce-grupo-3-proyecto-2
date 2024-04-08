@@ -48,6 +48,10 @@ searchIcon.setAttribute("src", "../../assets/img/mag.svg");
 searchIcon.setAttribute("alt", "magnifying-glass-icon");
 subMenuDiv.appendChild(searchIcon);
 
+const searchContainer = document.createElement("div");
+searchContainer.classList.add("search-container");
+searchContainer.style.display = "none";
+
 searchIcon.addEventListener("click", (event) => {
   // Verifica si el input ya está visible
   const isInputVisible = document.querySelector(".search-input");
@@ -56,12 +60,11 @@ searchIcon.addEventListener("click", (event) => {
   if (isInputVisible) {
     document.querySelector(".search-input").remove();
     document.querySelector(".search-button").remove();
+    document.querySelector(".search-container").remove();
     searchIcon.style.display = "inline"; // Muestra nuevamente el icono de búsqueda
     return;
   }
 
-  const searchContainer = document.createElement("div");
-  searchContainer.classList.add("search-container");
   // Crear el input de búsqueda
   const searchInput = document.createElement("input");
   searchInput.setAttribute("type", "text");
@@ -81,36 +84,20 @@ searchIcon.addEventListener("click", (event) => {
   searchContainer.appendChild(searchInput);
   searchContainer.appendChild(searchButton);
 
-  // Agregar el input y el botón al header
-  header.appendChild(searchInput);
-  header.appendChild(searchButton);
-
   header.appendChild(searchContainer);
-
-  // Ocultar el ícono de búsqueda
-  searchIcon.style.display = "none";
 
   // Agregar el evento de clic al botón de búsqueda
   searchButton.addEventListener("click", () => {
-    // Aquí puedes agregar el comportamiento de búsqueda
-    // Por ejemplo, obtener el valor del input y realizar una acción
+    // se agrega el comportamiento de búsqueda
     const searchText = searchInput.value;
     console.log("Búsqueda:", searchText);
   });
 });
 
-// Función para ocultar el input y el botón cuando se haga clic en cualquier parte de la página
-document.addEventListener("click", (event) => {
-  // Si el clic no se hizo en el icono de búsqueda, el input o el botón de búsqueda, los oculta
-  if (
-    event.target !== searchIcon &&
-    event.target !== document.querySelector(".search-input") &&
-    event.target !== document.querySelector(".search-button")
-  ) {
-    document.querySelector(".search-input")?.remove();
-    document.querySelector(".search-button")?.remove();
-    searchIcon.style.display = "inline"; // Muestra nuevamente el icono de búsqueda
-  }
+searchIcon.addEventListener("click", () => {
+  if (searchContainer.style.display === "none") {
+    searchContainer.style.display = "flex";
+  } else return;
 });
 
 const favoritesIcon = document.createElement("img");

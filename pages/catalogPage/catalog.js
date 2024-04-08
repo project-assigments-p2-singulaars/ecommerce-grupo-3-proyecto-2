@@ -2,14 +2,12 @@ const url = 'http://localhost:3000/products';
 const miVariable = sessionStorage.getItem('miValor');
 const enlaceClickado = sessionStorage.getItem('enlaceClicado');
 
-
-
 if (enlaceClickado == "VER TODOS"){
 fetch(url)
     .then(response => response.json())
     .then(data => {
-        const products = data.products;
-        
+        const products = data;
+        console.log(products);
         printCard(products);//PRINTANDO CARDS
         
     }).then(sessionStorage.removeItem('enlaceClicado'))
@@ -29,7 +27,7 @@ function buscarProducto(parametro) {
     fetch(url)
       .then(response => response.json())
       .then(data => {
-        const productos = data.products.filter(producto => producto.title.toLowerCase().includes(inputTitulo));
+        const productos = data.filter(producto => producto.title.toLowerCase().includes(inputTitulo));
         printCard(productos);
       })
       .then(sessionStorage.removeItem('miValor'))
@@ -50,7 +48,7 @@ function buscarProducto(parametro) {
       .then(response => response.json())
       .then(data => {
         
-        const productos = data.products.filter(producto => producto.category.toLowerCase().includes(inputCategoria.toLowerCase()));
+        const productos = data.filter(producto => producto.category.toLowerCase().includes(inputCategoria.toLowerCase()));
         
         printCard(productos); //PRINTANDO CARDS
       })

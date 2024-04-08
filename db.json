@@ -1,9 +1,9 @@
 {
   "products": [
     {
-      "id": 1,
+      "__id": 1,
       "title": "PIPI",
-      "price": 8.00,
+      "price": 8,
       "description": "Patito inspirado en la popular personaje de Pipi Calzas Largas. Ideal para nostálgicos de los 80 con childhood issues.",
       "image1": "../../assets/img/ducks/pipi.png",
       "imagev1": "./img/ducks/pipi-v1.png",
@@ -13,9 +13,9 @@
       "stock": 10
     },
     {
-      "id": 2,
+      "__id": 2,
       "title": "LONDRES",
-      "price": 8.00,
+      "price": 8,
       "description": "Patito para que puedas decir que has visitado Londres sin haber hecho necesariamente. El de EEUU es demasiado Mainstream.",
       "image1": "../../assets/img/ducks/londres.jpg",
       "imagev1": "./img/ducks/londres-v1.png",
@@ -25,9 +25,9 @@
       "stock": 10
     },
     {
-      "id": 3,
+      "__id": 3,
       "title": "CHEWBACCA",
-      "price": 8.00,
+      "price": 8,
       "description": "Patito de Chewbacca. Ya deberías saber cual es.",
       "image1": "../../assets/img/ducks/chewaka-duck.png",
       "imagev1": "",
@@ -37,9 +37,9 @@
       "stock": 10
     },
     {
-      "id": 4,
+      "__id": 4,
       "title": "DONUT",
-      "price": 8.00,
+      "price": 8,
       "description": "Patito con complejo de Donut. Tan apetecible como dulce.",
       "image1": "../../assets/img/ducks/donut.png",
       "imagev1": "",
@@ -49,9 +49,9 @@
       "stock": 10
     },
     {
-      "id": 5,
+      "__id": 5,
       "title": "MATRIX",
-      "price": 8.00,
+      "price": 8,
       "description": "Patito de la popular peli Matrix. Cree vivir en un mundo paralelo.",
       "image1": "../../assets/img/ducks/ducktrix.png",
       "imagev1": "",
@@ -61,9 +61,9 @@
       "stock": 10
     },
     {
-      "id": 6,
+      "__id": 6,
       "title": "PINK PANTHER",
-      "price": 8.00,
+      "price": 8,
       "description": "Patito inspirado en la Pantera Rosa. Taram-taram, taram, taram-taram-taram, taram, taraaaaaaam",
       "image1": "../../assets/img/ducks/pink-panther.jpg",
       "imagev1": "",
@@ -73,9 +73,9 @@
       "stock": 10
     },
     {
-      "id": 7,
+      "__id": 7,
       "title": "SPIDERDUCK",
-      "price": 8.00,
+      "price": 8,
       "description": "Patito disfrazado de Spiderman. Spiderpato, spiderpato, hace lo que un spiderpato hace.",
       "image1": "../../assets/img/ducks/spiderman.jpg",
       "imagev1": "",
@@ -83,12 +83,11 @@
       "imagev3": "",
       "category": "PELÍCULAS",
       "stock": 10
-      
     },
     {
-      "id": 8,
+      "__id": 8,
       "title": "GAMER",
-      "price": 8.00,
+      "price": 8,
       "description": "Patito gamer de la vida. Se ha pasado el Dark Souls tres veces ya.",
       "image1": "../../assets/img/ducks/gamer.jpg",
       "imagev1": "",
@@ -96,6 +95,54 @@
       "imagev3": "",
       "category": "CULTURA POP",
       "stock": 10
+    },
+    {
+      "__id": 9,
+      "title": "asdasdas",
+      "price": "2222",
+      "desc": "asdsad",
+      "image1": "",
+      "imagev1": "",
+      "imagev2": "",
+      "imagev3": "",
+      "category": "CULTURA POP",
+      "stock": "22"
+    },
+    {
+      "__id": 10,
+      "title": "323d2332",
+      "price": "32232323",
+      "desc": "233222332",
+      "image1": "C:\\fakepath\\_wallpaper__generation_3_by_arkeis_pokemon_d85oq7r.jpg",
+      "imagev1": "",
+      "imagev2": "",
+      "imagev3": "",
+      "category": "CULTURA POP",
+      "stock": "232323"
+    },
+    {
+      "__id": 11,
+      "title": "dasdasdsad",
+      "price": "2222",
+      "desc": "222d",
+      "image1": "C:\\fakepath\\_wallpaper__generation_3_by_arkeis_pokemon_d85oq7r.jpg",
+      "imagev1": "",
+      "imagev2": "",
+      "imagev3": "",
+      "category": "PROGRAMACIÓN",
+      "stock": "2222"
+    },
+    {
+      "id": "f3b5",
+      "title": "asdasdsad",
+      "price": "22112",
+      "desc": "212121",
+      "image1": "C:\\fakepath\\_wallpaper__generation_3_by_arkeis_pokemon_d85oq7r.jpg",
+      "imagev1": "",
+      "imagev2": "",
+      "imagev3": "",
+      "category": "ARTISTAS",
+      "stock": "12121212"
     }
   ]
 }

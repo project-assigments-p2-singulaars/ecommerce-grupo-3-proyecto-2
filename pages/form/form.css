@@ -1,277 +1,95 @@
-
-    <form>
-        <h2>NUEVO PRODUCTO</h2>
-        <div class="image-submit-content">
-            <div class="empty-image-user"></div>
-            <input type="file" name="image1" >AÑADIR IMÁGENES</button>
-        </div>
-        <section class="form-data-content">
-            <input type="text" name="title" />
-            <div class="category-price">
-                <select type="number" name="category">
-                    <option>CULTURA POP</option>
-                    <option>ARTISTAS</option>
-                    <option>PELÍCULAS</option>
-                    <option>PROGRAMACIÓN</option>
-                </select>
-                <input type="numnber" name="price"/>
-            </div>
-                <input type="text" name="description"/>
-        </section>
-        <button type="submit">PUBLICAR</button>
-        <input type="number" name="stock" min="1"/>
-    </form>    
 *{
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
-
 body{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-h2{
-    color:  #FFD801;
-    font-family: "Passion One", sans-serif;
-    font-size: 3.70vh;
-
-}
-
-@import url("https://fonts.googleapis.com/css2?family=Chewy&family=Homemade+Apple&family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&family=Knewave&family=Open+Sans:ital@0;1&family=Passion+One:wght@400;700;900&family=Paytone+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap");
-
-body {
-  font-family: "Open Sans", sans-serif;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-header {
-  position: fixed;
-  z-index: 100;
-  display: flex;
-  align-items: center;
-  background-color: #ffd801;
-  width: 100%;
-  height: 7vh;
-  margin: 0;
-  padding: 0;
-  top: 0;
-  left: 0;
-}
-
-.search-container {
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 5rem;
-  position: absolute;
-  z-index: 10;
-  top: 4rem;
-  background-color: #ffd801;
-}
-
-.search-input {
-  width: 15rem;
-  height: 2rem;
-  border-radius: 8px;
-  border-color: #9a9a9a;
-  margin-right: 0.5rem;
-  font-family: "Open Sans", sans-serif;
-  font-size: 1rem;
-  padding-left: 10px;
-}
-
-.search-input::placeholder {
-  font-family: "Open Sans", sans-serif;
-  font-size: 1rem;
-}
-
-.search-button {
-  width: 7rem;
-  height: 2rem;
-  background-color: #ed821d;
-  color: white;
-  border-radius: 8px;
-  border: none;
-  font-family: "Passion One", sans-serif;
-  font-size: 1.5rem;
-}
-
-.sidebar {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 15%;
-  height: auto;
-}
-.sidebar > img {
-  width: 50%;
-}
-.title-logo {
-  margin-left: -5%;
-  display: flex;
-  width: 50%;
-  height: 100%;
-  align-items: center;
-}
-.title-logo {
-  #duck-u-logo {
-    width: 55%;
-    height: auto;
-    display: flex;
-    align-items: center;
-  }
-  img {
-    height: 80%;
-  }
-}
-#sub-menu {
-  height: 100%;
-  width: 40%;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  margin-right: 0.5em;
-  gap: 1em;
-}
-
-.header-icon {
-  height: 44%;
-  width: 19%;
-}
-
-#menu-mobile {
-  display: none;
-  position: inherit;
-  top: 0;
-  left: 0;
-  width: 80vw;
-  height: 100vh;
-  background-color: #ffd801;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  z-index: 200;
-}
-
-#menu-mobile ul {
-  height: 60vh;
-  width: 100%;
-  list-style-type: none;
-  padding: 0;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-around;
-}
-
-#menu-mobile ul li {
-  height: 7vh;
-  width: 100%;
-  font-family: "Passion One", sans-serif;
-  font-weight: 400;
-  font-size: 1.8rem;
-  color: #392f5a;
-  display: flex;
-  align-items: center;
-}
-
-#close-menu {
-  align-self: flex-end;
-  width: 10%;
-  height: auto;
-  margin: 5% 5% 25% 0;
-}
-
-.duck-list-icon {
-  margin-left: 10%;
-  width: 8vw;
-  height: 3.5vh;
-}
-li:active {
-  background-color: rgba(237, 130, 29, 0.5);
-}
-.category {
-  margin-left: 5%;
-}
-
-.count-products{
-  position: absolute;
-  top: 50%;
-  right: 0;
-  background-color: #000;
-  color: #fff;
-  width: 25px;
-  height: 25px;
-  display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 50%;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+  height: 90vh;
+  width: 80vw;
+}
+.titleProduct{
+  color:  #FFD801;
+  font-family: "Passion One", sans-serif;
+  font-size: 3.70vh;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.empty-image-userview{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+}
+.form-data-content{
+  height: 30%;
 }
 
-#contador-productos {
-  font-size: 12px;
-}
-
-.container-cart-products{
-  position: absolute;
-  top: 8vh;
-  background-color: #fff;
-  width: 85vw;
-  z-index: 1;
-  box-shadow: 0 -25px 25px rgba(0, 0, 0, 0.15);
+.field {
+  width: 18.75rem;
+  background-color: #FFEF99;
+  height: 2rem;
+  margin-top: 15px;
   border-radius: 10px;
+  border:0;
+}
+.fieldDescription {
+    width: 18.75rem;
+    background-color: #FFEF99;
+    height: 5rem;
+    border-radius: 10px;
+    margin-top: 15px;
+    border:0;
 }
 
-.cart-product {
+#category-price {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 30px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+  flex-direction: row;
+  margin-top: 15px;
+  width: 18.75rem;
+  background-color: #FFEF99;
+  height: 2rem;
+  border-radius: 10px;
+  border:0;
 }
 
-.info-cart-product {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex: 0.95;
+#publicarButton 
+{margin-top: 25px;
+  margin-bottom: 25px;
+  font-size: larger;
+  font: bold;
+  border-radius: 25px;
+  padding: 20;
+  background-color: #FFD801;
+  color: #392F5A;
+  height: 50px;
+  width: 150px;
+  border: 0;
 }
 
-.titulo-producto-carrito{
-  font-size: 5.5vw;
-  font-weight: 550;
-
+#actualizarButton 
+{margin-top: 25px;
+  margin-bottom: 25px;
+  font-size: larger;
+  font: bold;
+  border-radius: 25px;
+  padding: 20;
+  background-color: #FFD801;
+  color: #392F5A;
+  height: 50px;
+  width: 150px;
+  border: 0;
 }
 
-.precio-producto-carrito{
-  font-weight: 600;
-  font-size: 5.8vw;
-  margin-left: 1vw;
-}
-
-.cantidad-producto-carrito{
-  font-weight: 500;
-  font-size: 5.5vw;
-}
-
-.icon-close{
-  width: 7.5vw;
-  height: 3.5vh;
-  margin-left: 2.5vw;
-}
-
-.carrito-img{
-  width: 11vw;
-  height: 5vh;
-}

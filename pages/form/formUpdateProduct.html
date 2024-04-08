@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title> 
+    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="../../components/header/header.css">
+</head>
+<body>
+    <script src="headerForm.js"></script>
+    <form>
+        <p class="titleProduct">EDITAR</p>
+            <p class="titleProduct"> PRODUCTO</p>
+        <div class="empty-image-user"></div>
+        <img src="../../assets/img/image 6.png">
+            <label style="visibility:hidden;">AÑADIR IMÁGENES</label>
+            <input class="field" type="file" accept="image/png, image/jpeg, image/jpg"/>
+            <img id="preview" src=""  style="max-width: 200px; max-height: 200px;"/>
+        </div>
+        <section id="form-data-content">
+            <input class="field" type="text" id="title" placeholder="Título..."/>
+            <div id="category-price">
+                <select type="number" id="category" placeholder="Categoría...">
+                    <option>CULTURA POP</option>
+                    <option>ARTISTAS</option>
+                    <option>PELÍCULAS</option>
+                    <option>PROGRAMACIÓN</option>
+                </select>
+                <div id="currency-right"><input  type="number" id="price" placeholder="Precio..."/><i>€</i></div>
+            </div>
+                <input class="fieldDescription" type="text" id="description" placeholder="Descripción"/>
+        </section>
+        <button id="actualizarButton" type="submit">ACTUALIZAR</button>
+        <img src="../../assets/icons/Delete Trash.png" alt="">
+    </form> 
+</body>
+</html>

@@ -1,4 +1,4 @@
-const url = '../../db.json';
+const url = 'http://localhost:3000/products';
 const miVariable = sessionStorage.getItem('miValor');
 const enlaceClickado = sessionStorage.getItem('enlaceClicado');
 
@@ -10,7 +10,7 @@ fetch(url)
     .then(data => {
         const products = data.products;
         
-        printCard(productos);//PRINTANDO CARDS
+        printCard(products);//PRINTANDO CARDS
         
     }).then(sessionStorage.removeItem('enlaceClicado'))
     .catch(error => console.error('Error al cargar los datos:', error));
@@ -93,7 +93,7 @@ function buscarProducto(parametro) {
     } else {
 
       productos.forEach(product => {
-        
+            console.log(product);
             let cardS = document.createElement("div");
             cardS.classList.add("cardS");
 
@@ -124,7 +124,7 @@ function buscarProducto(parametro) {
             cardS.appendChild(linkProductView);
             linkProductView.appendChild(cardImg);
             linkProductView.appendChild(cardTitle);
-            cardS.appendChild(cardPrice);
+
 
             catalogGrid.appendChild(cardS);
 

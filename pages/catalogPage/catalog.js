@@ -93,32 +93,46 @@ function buscarProducto(parametro) {
     } else {
 
       productos.forEach(product => {
-        let cardS = document.createElement("div");
-        cardS.classList.add("cardS");
-
-        let favImg = document.createElement('img');
-        favImg.setAttribute("src", "../../assets/icons/Favorite1.svg");
-                
-
-        let cardImg = document.createElement('img');
-        cardImg.setAttribute("src", product.image1); 
-        cardImg.classList.add("cardS-image");
-
-        let cardTitle = document.createElement('p');
-        cardTitle.textContent = product.title;
-        cardTitle.classList.add("card-title");
         
+            let cardS = document.createElement("div");
+            cardS.classList.add("cardS");
 
-        let cardPrice = document.createElement('p');
-        cardPrice.textContent = `${product.price.toFixed(2)} €`;
-        cardPrice.classList.add("cardPrice");
+            let favImg = document.createElement('img');
+            favImg.setAttribute("src", "../../assets/icons/Favorite1.svg");
+                    
 
-        cardS.appendChild(favImg);
-        cardS.appendChild(cardImg);
-        cardS.appendChild(cardTitle);
-        cardS.appendChild(cardPrice);
+            let cardImg = document.createElement('img');
+            cardImg.setAttribute("src", product.image1); 
+            cardImg.classList.add("cardS-image");
 
-        catalogGrid.appendChild(cardS);
+            let cardTitle = document.createElement('p');
+            cardTitle.textContent = product.title;
+            cardTitle.classList.add("card-title");
+            
+
+            let cardPrice = document.createElement('p');
+            cardPrice.textContent = `${product.price.toFixed(2)} €`;
+            cardPrice.classList.add("cardPrice");
+
+            let linkProductView = document.createElement('a');
+            linkProductView.href = "../components/product-view/product-view.html";
+
+            cardS.appendChild(favImg);
+            cardS.appendChild(cardImg);
+            cardS.appendChild(cardTitle);
+            cardS.appendChild(cardPrice);
+            cardS.appendChild(linkProductView);
+            linkProductView.appendChild(cardImg);
+            linkProductView.appendChild(cardTitle);
+            cardS.appendChild(cardPrice);
+
+            catalogGrid.appendChild(cardS);
+
+
+
+
+
+
     });
     }
   }

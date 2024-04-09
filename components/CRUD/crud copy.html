@@ -3,18 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form</title>
+    <title>FormUpdate</title>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     
 </head>
 <body>
-    <form id="formulario">
+    <form id="formularioUpdate">
         <h2>NUEVO PRODUCTO</h2>
         <div class="image-submit-content">
             <div class="empty-image-user"></div>
             <input type="file" id="image1" >AÑADIR IMÁGENES</button>
-            
         </div>
+        <select id="productos">
+            <!-- Aquí se cargarán los productos -->
+        </select>
         <section class="form-data-content">
             <input type="text" id="title" />
             <div class="category-price">
@@ -31,6 +33,9 @@
         <button type="submit">PUBLICAR</button>
         <input type="number" id="stock" min="1"/>
     </form>    
+
+    <button id="borrarProducto">BORRAR</button>
+    
     <script src="crud.js"></script>
     
 </body>

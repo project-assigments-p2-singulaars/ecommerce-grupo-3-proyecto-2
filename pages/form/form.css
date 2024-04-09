@@ -40,7 +40,7 @@ form {
 .field {
   width: 18.75rem;
   background-color: #FFEF99;
-  height: 2rem;
+  height: 5rem;
   margin-top: 15px;
   border-radius: 10px;
   border:0;
@@ -93,3 +93,8 @@ form {
   border: 0;
 }
 
+#image1{
+  visibility: hidden;
+  width: 0,1px;
+  height: 0,1px;
+}

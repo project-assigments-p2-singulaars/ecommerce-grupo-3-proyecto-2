@@ -9,14 +9,16 @@
 </head>
 <body>
     <script src="headerForm.js"></script>
-    <form>
+    <form id="updateProducts">
         <p class="titleProduct">EDITAR</p>
             <p class="titleProduct"> PRODUCTO</p>
         <div class="empty-image-user"></div>
         <img src="../../assets/img/image 6.png">
-            <label style="visibility:hidden;">AÑADIR IMÁGENES</label>
-            <input class="field" type="file" accept="image/png, image/jpeg, image/jpg"/>
-            <img id="preview" src=""  style="max-width: 200px; max-height: 200px;"/>
+        <label style="visibility:hidden;">AÑADIR IMÁGENES</label>
+        <input  id="image1" type="file" accept="image/png, image/jpeg, image/jpg"/>
+        <label for="image1">
+            <span class="field">Seleccionar archivos</span>
+        </label>
         </div>
         <section id="form-data-content">
             <input class="field" type="text" id="title" placeholder="Título..."/>
@@ -33,6 +35,6 @@
         </section>
         <button id="actualizarButton" type="submit">ACTUALIZAR</button>
         <img src="../../assets/icons/Delete Trash.png" alt="">
-    </form> 
+    </form>
 </body>
 </html>

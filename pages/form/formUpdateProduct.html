@@ -23,13 +23,15 @@
         <section id="form-data-content">
             <input class="field" type="text" id="title" placeholder="Título..."/>
             <div id="category-price">
-                <select type="number" id="category" placeholder="Categoría...">
+                <select class="field1" type="number" id="category" placeholder="Categoría...">
                     <option>CULTURA POP</option>
                     <option>ARTISTAS</option>
                     <option>PELÍCULAS</option>
                     <option>PROGRAMACIÓN</option>
                 </select>
-                <div id="currency-right"><input  type="number" id="price" placeholder="Precio..."/><i>€</i></div>
+                <div id="currency-right"><input  type="number" id="price" placeholder="Precio..." min="0"/><i>€</i></div>
+            </div>
+            <div id="stock-ammount"><input class="field" type="number" id="price" placeholder="Stock..." min="0"/>
             </div>
                 <input class="fieldDescription" type="text" id="description" placeholder="Descripción"/>
         </section>

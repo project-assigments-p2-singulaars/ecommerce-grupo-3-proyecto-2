@@ -44,6 +44,15 @@ form {
   margin-top: 15px;
   border-radius: 10px;
   border:0;
+
+  .field1 {
+    width: 18.75rem;
+    background-color: #FFEF99;
+    height: 2rem;
+    margin-top: 15px;
+    border-radius: 10px;
+    border:0;
+  }
 }
 .fieldDescription {
     width: 18.75rem;
@@ -93,3 +102,17 @@ form {
   border: 0;
 }
 
+#image1{
+  visibility: hidden;
+  width: 0,1px;
+  height: 0,1px;
+}
+
+.fieldButton {
+  width: 18.75rem;
+  background-color: #FFEF99;
+  height: 3rem;
+  margin-top: 15px;
+  border-radius: 10px;
+  border:0;
+}

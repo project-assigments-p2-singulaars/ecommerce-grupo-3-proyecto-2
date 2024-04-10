@@ -41,7 +41,7 @@ form {
   width: 18.75rem;
   background-color: #FFEF99;
   height: 2rem;
-  margin-top: 15px;
+  margin-top: 30px;
   border-radius: 10px;
   border:0;
 
@@ -59,7 +59,8 @@ form {
     background-color: #FFEF99;
     height: 5rem;
     border-radius: 10px;
-    margin-top: 15px;
+    margin-top: 30px;
+    margin-bottom: 30px;
     border:0;
 }
 
@@ -75,7 +76,7 @@ form {
 }
 
 #publicarButton 
-{margin-top: 25px;
+{margin-top:40px;
   margin-bottom: 25px;
   font-size: larger;
   font: bold;
@@ -88,7 +89,7 @@ form {
   border: 0;
 }
 
-#actualizarButton 
+#PublicarButton 
 {margin-top: 25px;
   margin-bottom: 25px;
   font-size: larger;

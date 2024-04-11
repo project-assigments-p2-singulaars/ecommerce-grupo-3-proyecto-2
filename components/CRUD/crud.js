@@ -85,7 +85,7 @@ function cargarProductos() {
                 
                 if (selectedProduct) {
                     idForm = selectedProduct.id
-                    document.getElementById('image').src = selectedProduct.image1;
+                    document.getElementById('updateImage').src = selectedProduct.image1;
                     document.getElementById('imageUrlInput').value = selectedProduct.image1;
                     document.getElementById('title').value = selectedProduct.title;
                     document.getElementById('category').value = selectedProduct.category;
@@ -120,7 +120,8 @@ document.getElementById('borrarProducto').addEventListener('click', function() {
 
 function updateImage() {
     const imageUrlInput = document.getElementById('imageUrlInput').value;
-    const image = document.getElementById('image');
+    const image = document.getElementById('imgPreview');
+
     
     // Actualizar la URL de la imagen
     image.src = imageUrlInput;

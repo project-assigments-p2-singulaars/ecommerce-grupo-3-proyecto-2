@@ -6,6 +6,7 @@
     <title>Form</title> 
     <link rel="stylesheet" href="form.css">
     <link rel="stylesheet" href="../../components/header/header.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </head>
 <body>
     <script src="headerForm.js"></script>
@@ -13,9 +14,9 @@
         <p class="titleProduct">NUEVO</p>
             <p class="titleProduct"> PRODUCTO</p>
         <div class="empty-image-user"></div>
-        <img class="imgPreview" src="../../assets/img/image 6.png">
+        <img id="imgPreview" class="imgPreview" src="../../assets/img/image 6.png">
             <label style="visibility:hidden;">AÑADIR IMÁGENES</label>
-            <input type="text" id="imageUrlInput" placeholder="Introduce la URL de la imagen">
+            <input type="text" id="imageUrlInput">
             <button type="button" onclick="updateImage()">Actualizar Imagen</button>
 
         </div>
@@ -36,6 +37,7 @@
         </section>
         <button class="publicarButton" type="submit">PUBLICAR</button>
         <img src="../../assets/icons/Plus.png" alt="">
+        <script src="..\..\components\CRUD\crud.js"></script>
     </form>
 </body>
 </html>

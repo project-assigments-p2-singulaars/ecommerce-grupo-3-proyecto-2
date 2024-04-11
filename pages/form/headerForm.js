@@ -147,6 +147,8 @@ const categories = [
   "PELÍCULAS",
   "PROGRAMACIÓN",
   "VER TODOS",
+  "CREAR PRODUCTOS",
+  "EDITAR PRODUCTOS",
 ];
 categories.forEach((category) => {
   const li = document.createElement("li");
@@ -176,3 +178,11 @@ subMenuDiv.appendChild(carrito);
 
 // Agregar el header al cuerpo del documento
 document.body.appendChild(header);
+// Seleccionar la imagen por su ID
+let imagen = document.getElementById('duck-u-logo');
+
+// Agregar un evento de clic a la imagen
+imagen.addEventListener('click', function() {
+    // Redireccionar a la URL deseada
+    window.location.href = '../../../index.html';
+});

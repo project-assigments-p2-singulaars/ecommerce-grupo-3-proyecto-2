@@ -54,7 +54,9 @@ right: 0;
     height: 80% ;
 }
 .cardL{
+    margin-top: 5%;
     font-family: 'Open Sans', sans-serif;
+    width: 90%;
 }
 
 .priceL {
@@ -102,7 +104,10 @@ right: 0;
     width: 4.5rem;
     height: 2.125rem;
     align-self: center;
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+gap: 20%;    
 }
 
 .productButtonsContantiner {

@@ -1,8 +1,8 @@
-window.onload = () =>{
+// window.onload = () =>{
 
     let allProducts = [];
     const cartMenu = document.getElementById('cart-icon');
-    const countProducts = document.querySelector('.count-products');
+    const contador = document.querySelector('.count-products');
     const rowProduct = document.querySelector('.row-product')
     const button = document.querySelector('.buttonAddToCard');
     const cartDiv = document.querySelector('.container-cart-products')
@@ -48,9 +48,8 @@ window.onload = () =>{
             const divTitle = product.querySelector('.info-cart-product');
             const title = divTitle.querySelector('p').textContent;
             
-            console.log(title)
-
             allProducts = allProducts.filter(product => product.title !== title)
+            showHtml();
         }
     })
 
@@ -91,11 +90,11 @@ window.onload = () =>{
             total = total + parseInt(product.quantity * priceToString);
             totaProducts = totaProducts + product.quantity;
         });
-        countProducts.innerText = totaProducts;
+        contador.innerText = totaProducts;
         console.log(total);
     }
         
-}
+// }
     
 
 

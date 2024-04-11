@@ -3,7 +3,6 @@ const miVariable = sessionStorage.getItem('miValor');
 const enlaceClickado = sessionStorage.getItem('enlaceClicado');
 
 
-
 if (enlaceClickado == "VER TODOS"){
 fetch(url)
     .then(response => response.json())
@@ -30,7 +29,38 @@ function buscarProducto(parametro) {
       .then(response => response.json())
       .then(data => {
         const productos = data.products.filter(producto => producto.title.toLowerCase().includes(inputTitulo));
-        printCard(productos);
+        console.log(productos.length);
+        if (productos.length == null) {
+            
+        } else {
+
+          productos.forEach(product => {
+            let cardS = document.createElement("div");
+            cardS.classList.add("cardS");
+
+            let favImg = document.createElement('img');
+            favImg.setAttribute("src", "../../assets/icons/Favorite1.svg");
+
+            let cardImg = document.createElement('img');
+            cardImg.setAttribute("src", product.image1); 
+            cardImg.classList.add("cardS-image");
+
+            let cardTitle = document.createElement('p');
+            cardTitle.textContent = product.title;
+            cardTitle.classList.add("card-title");           
+
+            let cardPrice = document.createElement('p');
+            cardPrice.textContent = `${product.price.toFixed(2)} €`;
+            cardPrice.classList.add("cardPrice");
+
+            cardS.appendChild(favImg);
+            cardS.appendChild(cardImg);
+            cardS.appendChild(cardTitle);
+            cardS.appendChild(cardPrice);
+
+            catalogGrid.appendChild(cardS);
+        });
+        }
       })
       .then(sessionStorage.removeItem('miValor'))
       .catch(error => {
@@ -84,55 +114,4 @@ function buscarProducto(parametro) {
   
     }
    
-  }
-
-  function printCard(productos){
-    const catalogGrid = document.querySelector(".catalog-grid")
-    if (productos.length == null) {
-            
-    } else {
-
-      productos.forEach(product => {
-            console.log(product);
-            let cardS = document.createElement("div");
-            cardS.classList.add("cardS");
-
-            let favImg = document.createElement('img');
-            favImg.setAttribute("src", "../../assets/icons/Favorite1.svg");
-                    
-
-            let cardImg = document.createElement('img');
-            cardImg.setAttribute("src", product.image1); 
-            cardImg.classList.add("cardS-image");
-
-            let cardTitle = document.createElement('p');
-            cardTitle.textContent = product.title;
-            cardTitle.classList.add("card-title");
-            
-
-            let cardPrice = document.createElement('p');
-            cardPrice.textContent = `${product.price.toFixed(2)} €`;
-            cardPrice.classList.add("cardPrice");
-
-            let linkProductView = document.createElement('a');
-            linkProductView.href = "../components/product-view/product-view.html";
-
-            cardS.appendChild(favImg);
-            cardS.appendChild(cardImg);
-            cardS.appendChild(cardTitle);
-            cardS.appendChild(cardPrice);
-            cardS.appendChild(linkProductView);
-            linkProductView.appendChild(cardImg);
-            linkProductView.appendChild(cardTitle);
-
-
-            catalogGrid.appendChild(cardS);
-
-
-
-
-
-
-    });
-    }
   }

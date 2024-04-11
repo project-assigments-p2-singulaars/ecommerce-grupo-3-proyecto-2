@@ -54,9 +54,10 @@ right: 0;
     height: 80% ;
 }
 .cardL{
-    margin-top: 5%;
+    margin-top: 10vh;
     font-family: 'Open Sans', sans-serif;
     width: 90%;
+    margin-left: 6vw;
 }
 
 .priceL {

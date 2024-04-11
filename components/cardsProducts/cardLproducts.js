@@ -1,3 +1,7 @@
+const productData = JSON.parse(sessionStorage.getItem('productData'));
+console.log(productData);
+
+
 let cardL = document.createElement("section");
 cardL.classList.add("cardL");
 
@@ -8,7 +12,7 @@ favLimg.setAttribute("src", "../../assets/icons/Favorite1.svg");
 favLimg.classList.add("favL");
 
 let cardLimg = document.createElement("img");
-cardLimg.setAttribute("src", "../../assets/img/ducks/front_london.jpg");
+cardLimg.setAttribute("src", productData.image1);
 cardLimg.classList.add("product-img-Fav-container");
 
 productImgFavContainer.appendChild(favLimg);
@@ -17,23 +21,22 @@ productImgFavContainer.appendChild(cardLimg);
 let productImgViewsContainer = document.createElement("div");
 
 let v1 = document.createElement("img");
-v1.setAttribute("src", "../../assets/img/ducks/v1_london.jpg");
+v1.setAttribute("src", productData.imagev1);
 v1.classList.add("v1");
 
 let v2 = document.createElement("img");
-v2.setAttribute("src", "../../assets/img/ducks/v2_london.jpg");
+v2.setAttribute("src", productData.imagev2);
 v2.classList.add("v2");
 
 let v3 = document.createElement("img");
-v3.setAttribute("src", "../../assets/img/ducks/v3_london.jpg");
+v3.setAttribute("src", productData.imagev3);
 v3.classList.add("v3");
 
 let cardLtitlle = document.createElement("p");
-cardLtitlle.textContent = "London";
+cardLtitlle.textContent = productData.title;
 cardLtitlle.classList.add("card-tittle");
-
 let priceL = document.createElement("p");
-priceL.textContent = "8 €";
+priceL.textContent = `${productData.price} €`;
 priceL.classList.add("priceL");
 
 let productTitleAmmountButtonContatiner = document.createElement("div");
@@ -42,14 +45,7 @@ productTitleAmmountButtonContatiner.classList.add(
 );
 
 let cardDescription = document.createElement("p");
-cardDescription.textContent =
-  "Desde Londres este pato de goma viene cumpliendo todas las normativas de seguridad Europeas y puedes lamerlo sin riesgo y bañarte con él.";
-
-/*let buttonProductAmmount = document.createElement("button");
-buttonProductAmmount.type = "button";
-buttonProductAmmount.innerText = "+ 1 -";
-buttonProductAmmount.classList.add("buttonProductAmmount");*/
-
+cardDescription.textContent = productData.description;
 let buttonProductAmmount = document.createElement('div');
 buttonProductAmmount.classList.add("buttonProductAmmount");
 let spanMinus = document.createElement('span');
@@ -125,4 +121,7 @@ productImgViewsContainer.appendChild(v1);
 productImgViewsContainer.appendChild(v2);
 productImgViewsContainer.appendChild(v3);
 productImgViewsContainer.classList.add("porductImgViewsContainer");
+
+
+
 

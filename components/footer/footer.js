@@ -13,7 +13,7 @@ divDuckFooter.appendChild(divTextBox);
 footer.appendChild(divDuckFooter);
 
 const duckImg = document.createElement("img");
-duckImg.setAttribute("src", "../../assets/img/patito.png");
+duckImg.setAttribute("src", "../../assets/img");
 duckImg.setAttribute("id", "duck-img");
 footer.appendChild(duckImg);
 

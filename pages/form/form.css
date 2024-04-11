@@ -8,6 +8,7 @@ body{
   justify-content: center;
   align-items: center;
 }
+
 form {
   display: flex;
   flex-direction: column;
@@ -58,8 +59,8 @@ form {
     background-color: #FFEF99;
     height: 5rem;
     border-radius: 10px;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 15px;
+    margin-bottom: 15px;
     border:0;
 }
 
@@ -75,7 +76,7 @@ form {
 }
 
 .publicarButton{
-  margin-top:40px;
+  margin-top:30px;
   margin-bottom: 25px;
   font-size: larger;
   font: bold;
@@ -83,7 +84,7 @@ form {
   padding: 20;
   background-color: #FFD801;
   color: #392F5A;
-  height: 60px;
+  height: 40px;
   width: 200px;
   border: 0;
 }

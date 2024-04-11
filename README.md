@@ -24,6 +24,9 @@ El sitio web consta de 4 páginas:
 4. **Catálogo**:
    - Muestra todos los productos disponibles: ![Catálogo](https://raw.githubusercontent.com/project-assigments-p2-singulaars/ecommerce_duck_U/main/assets/screensReadme/catalog.png)  
 
+## URL del Despliegue
+Puedes acceder al despliegue de Duck U en Vercel en la siguiente URL: [DEPLOY](https://duck-u.vercel.app/)
+
 ## Contribución
 Aceptamos contribuciones para futuras tareas pendientes como el responsive, iniciar sesión para el usuario y que pueda seleccionar sus productos favoritos, y que la web esté linkeada con la vista de administrador.  
 

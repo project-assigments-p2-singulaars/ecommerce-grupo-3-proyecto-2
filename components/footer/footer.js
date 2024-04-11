@@ -21,13 +21,11 @@ const footerDiv = document.createElement("div");
 footerDiv.setAttribute("id", "footer-div");
 
 footer.appendChild(footerDiv);
-//div social media
 
 const divSocialMedia = document.createElement("div");
 divSocialMedia.setAttribute("id", "social-media");
 footerDiv.appendChild(divSocialMedia);
 
-// social media icons
 const mediaIcons = [
   {
     id: "facebook",

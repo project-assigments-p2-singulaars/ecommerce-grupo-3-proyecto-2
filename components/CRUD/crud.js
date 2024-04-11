@@ -10,7 +10,7 @@ document.getElementById('formulario').addEventListener('submit', function(event)
         title: document.getElementById('title').value,
         price: document.getElementById('price').value,
         description: document.getElementById('description').value,
-        image1: document.getElementById('image1').value,
+        image1: document.getElementById('imageUrlInput').value,
         imagev1: "",
         imagev2: "",
         imagev3: "",
@@ -40,7 +40,7 @@ document.getElementById('formularioUpdate').addEventListener('submit', function(
         title: document.getElementById('title').value,
         price: document.getElementById('price').value,
         description: document.getElementById('description').value,
-        image1: document.getElementById('image1').value,
+        image1: document.getElementById('imageUrlInput').value,
         imagev1: "",
         imagev2: "",
         imagev3: "",
@@ -80,9 +80,13 @@ function cargarProductos() {
 
             select.addEventListener('change', function() {
                 const selectedProductId = this.value;
+                console.log(selectedProductId);
                 const selectedProduct = productos.find(producto => producto.id === selectedProductId);
+                
                 if (selectedProduct) {
                     idForm = selectedProduct.id
+                    document.getElementById('image').src = selectedProduct.image1;
+                    document.getElementById('imageUrlInput').value = selectedProduct.image1;
                     document.getElementById('title').value = selectedProduct.title;
                     document.getElementById('category').value = selectedProduct.category;
                     document.getElementById('price').value = selectedProduct.price;
@@ -96,7 +100,7 @@ function cargarProductos() {
         });
 }
 
-
+if (document.title === "FormUpdate"){
 document.getElementById('borrarProducto').addEventListener('click', function() {
     const productId = idForm; // Obtén el ID del producto que deseas borrar
 
@@ -112,5 +116,13 @@ document.getElementById('borrarProducto').addEventListener('click', function() {
             alert('Error al eliminar producto');
         });
 });
+}
 
+function updateImage() {
+    const imageUrlInput = document.getElementById('imageUrlInput').value;
+    const image = document.getElementById('image');
+    
+    // Actualizar la URL de la imagen
+    image.src = imageUrlInput;
+}
 

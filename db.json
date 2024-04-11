@@ -10,7 +10,8 @@
       "imagev2": "../../assets/img/ducks/pipiv2.png",
       "imagev3": "../../assets/img/ducks/pipiv3.png",
       "category": "PELÍCULAS",
-      "stock": 10
+      "stock": 10,
+      "id": "aeaf"
     },
     {
       "id": "2",
@@ -58,11 +59,13 @@
       "imagev2": "../../assets/img/ducks/ducktrixv2.png",
       "imagev3": "../../assets/img/ducks/ducktrixv3.png",
       "category": "PELÍCULAS",
-      "stock": 10
+      "stock": 10,
+      "id": "cfda"
     },
     {
       "id": "6",
       "title": "PINK PANTHER",
+      "price": 8,
       "price": 8,
       "description": "Patito inspirado en la Pantera Rosa. Taram-taram, taram, taram-taram-taram, taram, taraaaaaaam",
       "image1": "../../assets/img/ducks/pink-panter.png",
@@ -70,11 +73,13 @@
       "imagev2": "../../assets/img/ducks/pink-panterv2.png",
       "imagev3": "../../assets/img/ducks/pink-panterv3.png",
       "category": "PELÍCULAS",
-      "stock": 10
+      "stock": 10,
+      "id": "3389"
     },
     {
       "id": "7",
       "title": "SPIDERDUCK",
+      "price": 8,
       "price": 8,
       "description": "Patito disfrazado de Spiderman. Spiderpato, spiderpato, hace lo que un spiderpato hace.",
       "image1": "../../assets/img/ducks/spiderduck.jpg",
@@ -87,6 +92,7 @@
     {
       "id": "8",
       "title": "GAMER",
+      "price": 8,
       "price": 8,
       "description": "Patito gamer de la vida. Se ha pasado el Dark Souls tres veces ya.",
       "image1": "../../assets/img/ducks/gamer.jpg",

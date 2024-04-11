@@ -17,4 +17,4 @@ function guardarValor(enlace) {
   sessionStorage.setItem("enlaceClicado", enlaceClicado);
 
   window.location.href = "../../pages/catalogPage/catalog.html";
-}
+};

@@ -15,14 +15,13 @@
   left: 0;
   width: 100vw;
   height: 20vh;
-  /* border: 1px solid blue; */
   letter-spacing: 0.3rem;
 }
 
 .header-text {
   width: 90%;
   position: absolute;
-  top: 20%;
+  /* top: 20%; */
   left: 8%;
   text-align: left;
   font-family: "Passion One", sans-serif;

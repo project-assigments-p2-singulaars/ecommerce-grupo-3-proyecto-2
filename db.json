@@ -1,5 +1,5 @@
 {
-  "products": [
+  "products": [ 
     {
       "id": 1,
       "title": "PIPI",
@@ -18,9 +18,9 @@
       "price": 8.00,
       "description": "Patito para que puedas decir que has visitado Londres sin haber hecho necesariamente. El de EEUU es demasiado Mainstream.",
       "image1": "../../assets/img/ducks/londres.jpg",
-      "imagev1": "./img/ducks/londres-v1.png",
-      "imagev2": "./img/ducks/londres-v2.png",
-      "imagev3": "./img/ducks/londres-v3.png",
+      "imagev1": "../../assets/img/ducks/v1_london.jpg",
+      "imagev2": "../../assets/img/ducks/v2_london.jpg",
+      "imagev3": "../../assets/img/ducks/v3_london.jpg",
       "category": "CULTURA POP",
       "stock": 10
     },

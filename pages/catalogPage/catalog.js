@@ -3,7 +3,6 @@ const miVariable = sessionStorage.getItem('miValor');
 const enlaceClickado = sessionStorage.getItem('enlaceClicado');
 
 
-
 if (enlaceClickado == "VER TODOS"){
 fetch(url)
     .then(response => response.json())
@@ -69,7 +68,6 @@ function buscarProducto(parametro) {
 
             let favImg = document.createElement('img');
             favImg.setAttribute("src", "../../assets/icons/Favorite1.svg");
-                    
 
             let cardImg = document.createElement('img');
             cardImg.setAttribute("src", product.image1); 
@@ -77,8 +75,7 @@ function buscarProducto(parametro) {
 
             let cardTitle = document.createElement('p');
             cardTitle.textContent = product.title;
-            cardTitle.classList.add("card-title");
-            
+            cardTitle.classList.add("card-title");           
 
             let cardPrice = document.createElement('p');
             cardPrice.textContent = `${product.price.toFixed(2)} €`;

@@ -80,7 +80,8 @@ function cargarProductos() {
 
             select.addEventListener('change', function() {
                 const selectedProductId = this.value;
-                const selectedProduct = productos.find(producto => producto.id === selectedProductId);
+                const selectedProduct = productos.find(producto => producto.id == selectedProductId);
+                console.log(selectedProduct)
                 if (selectedProduct) {
                     idForm = selectedProduct.id
                     document.getElementById('title').value = selectedProduct.title;

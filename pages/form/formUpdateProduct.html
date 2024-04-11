@@ -17,6 +17,7 @@
             <input type="file" id="image1" >AÑADIR IMÁGENES</button>
         </div> -->
         <img src="../../assets/img/image 6.png">
+        <input type="text" class="field" id="imageUrlInput" placeholder="introducir Link im"/>
         <label style="visibility:hidden;">AÑADIR IMÁGENES</label>
         <input  id="image1" type="file" accept="image/png, image/jpeg, image/jpg"/>
         <label for="image1">
@@ -25,7 +26,7 @@
         <select id="productos">
             <!-- Aquí se cargarán los productos -->
         </select>
-        <section class="form-data-content">
+        <section id="form-data-content">
             <input type="text" class="field" id="title" placeholder="Title..."/>
          <div id="category-price">
             <section class="field1" id="category-price">
@@ -37,7 +38,7 @@
                 </select>
                 <div id="currency-right"><input  type="number" id="price" placeholder="Precio..." min="0"/><i>€</i></div>
         </div>
-                
+        <div id="stock"><input class="field" type="number" id="price" placeholder="Stock..." min="0"/>     
         <input type="text" class="fieldDescription" placeholder="Descripción..." id="description"/>
                 
         </section>
@@ -46,9 +47,10 @@
     </form>    
 
     <button id="borrarProducto"><img src="../../assets/icons/Delete Trash.png"></button>
+
     
-    <script src="crud.js"></script>
     <script src="headerForm.js"></script>
+    <script src="crud.js"></script>
 </body>
    <!-- <script src="headerForm.js"></script>
     <form id="updateProducts">

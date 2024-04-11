@@ -33,17 +33,15 @@ form {
   align-items: center;
   height: 40vh;
 }
-.form-data-content{
-  height: 30%;
-}
 
 .field {
   width: 18.75rem;
   background-color: #FFEF99;
-  height: 2rem;
+  color: #392F5A;
+  height: 3rem;
   margin-top: 30px;
   border-radius: 10px;
-  border:0;
+  border:0;}
 
   .field1 {
     width: 18.75rem;
@@ -52,8 +50,9 @@ form {
     margin-top: 15px;
     border-radius: 10px;
     border:0;
+    align-items: start;
   }
-}
+
 .fieldDescription {
     width: 18.75rem;
     background-color: #FFEF99;
@@ -75,8 +74,8 @@ form {
   border:0;
 }
 
-#publicarButton 
-{margin-top:40px;
+#publicarButton{
+  margin-top:40px;
   margin-bottom: 25px;
   font-size: larger;
   font: bold;
@@ -89,8 +88,8 @@ form {
   border: 0;
 }
 
-#PublicarButton 
-{margin-top: 25px;
+#PublicarButton {
+  margin-top: 25px;
   margin-bottom: 25px;
   font-size: larger;
   font: bold;
@@ -117,3 +116,4 @@ form {
   border-radius: 10px;
   border:0;
 }
+

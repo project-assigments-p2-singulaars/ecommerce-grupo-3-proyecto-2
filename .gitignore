@@ -1,2 +1,7 @@
+<<<<<<< HEAD
 node_modules/
 .node_modules
+=======
+.node_modules
+node_modules/
+>>>>>>> ee9bc83d162d43f8c5374ed9a3b9b61fe376c31d

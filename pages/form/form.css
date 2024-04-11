@@ -1,48 +1,113 @@
-
-    <form>
-        <h2>NUEVO PRODUCTO</h2>
-        <div class="image-submit-content">
-            <div class="empty-image-user"></div>
-            <input type="file" name="image1" >AÑADIR IMÁGENES</button>
-        </div>
-        <section class="form-data-content">
-            <input type="text" name="title" />
-            <div class="category-price">
-                <select type="number" name="category">
-                    <option>CULTURA POP</option>
-                    <option>ARTISTAS</option>
-                    <option>PELÍCULAS</option>
-                    <option>PROGRAMACIÓN</option>
-                </select>
-                <input type="numnber" name="price"/>
-            </div>
-                <input type="text" name="description"/>
-        </section>
-        <button type="submit">PUBLICAR</button>
-        <input type="number" name="stock" min="1"/>
-    </form>    
 *{
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
-
 body{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+  height: 90vh;
+  width: 80vw;
+}
+.titleProduct{
+  color:  #FFD801;
+  font-family: "Passion One", sans-serif;
+  font-size: 3.70vh;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.empty-image-userview{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
 }
 
-h2{
-    color:  #FFD801;
-    font-family: "Passion One", sans-serif;
-    font-size: 3.70vh;
+.field {
+  width: 18.75rem;
+  background-color: #FFEF99;
+  color: #392F5A;
+  height: 3rem;
+  margin-top: 15px;
+  border-radius: 10px;
+  border:0;}
 
+  .field1 {
+    width: 18.75rem;
+    background-color: #FFEF99;
+    height: 2rem;
+    margin-top: 15px;
+    border-radius: 10px;
+    border:0;
+    align-items: start;
+  }
+
+.fieldDescription {
+    width: 18.75rem;
+    background-color: #FFEF99;
+    height: 5rem;
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border:0;
 }
+
+#category-price {
+  display: flex;
+  flex-direction: row;
+  margin-top: 15px;
+  width: 18.75rem;
+  background-color: #FFEF99;
+  height: 2rem;
+  border-radius: 10px;
+  border:0;
+}
+
+.publicarButton{
+  margin-top:30px;
+  margin-bottom: 25px;
+  font-size: larger;
+  font: bold;
+  border-radius: 25px;
+  padding: 20;
+  background-color: #FFD801;
+  color: #392F5A;
+  height: 40px;
+  width: 200px;
+  border: 0;
+}
+
+
+
+#image1{
+  visibility: hidden;
+  width: 0,1px;
+  height: 0,1px;
+}
+
+.fieldButton {
+  width: 18.75rem;
+  background-color: #FFEF99;
+  height: 3rem;
+  margin-top: 15px;
+  border-radius: 10px;
+  border:0;
+}
+
+.imgPreview {
+  width: 300px;
+  height: 200px;
+}
+

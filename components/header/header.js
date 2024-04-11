@@ -125,6 +125,8 @@ const categories = [
   "PELÍCULAS",
   "PROGRAMACIÓN",
   "VER TODOS",
+  "CREAR PRODUCTOS",
+  "EDITAR PRODUCTOS",
 ];
 categories.forEach((category) => {
   const li = document.createElement("li");

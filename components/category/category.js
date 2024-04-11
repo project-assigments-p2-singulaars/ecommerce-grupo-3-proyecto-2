@@ -10,7 +10,7 @@ const categoryData = [
   },
   {
     name: "PELÍCULAS",
-    imageUrl: "./assets/img/ducks/chewaka-duck.png",
+    imageUrl: "./assets/img/ducks/chewaka.jpg",
   },
   {
     name: "PROGRAMACIÓN",

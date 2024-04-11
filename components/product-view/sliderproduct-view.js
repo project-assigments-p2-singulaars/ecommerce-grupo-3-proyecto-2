@@ -15,7 +15,7 @@ const mostSoldData = [
     productPrice: "8,00€",
   },
   {
-    imageUrl: "../../assets/img/ducks/chewaka-duck.png",
+    imageUrl: "./assets/img/ducks/chewaka.jpg",
     productName: "CHEWAKA",
     productPrice: "8,00€",
   },

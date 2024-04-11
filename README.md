@@ -8,21 +8,21 @@ Para instalar y configurar el proyecto, necesitas instalar Node.js, el archivo p
 El sitio web consta de 4 páginas:
 
 1. **Landing Page**:
-   - Slider con 4 categorías de productos: ![Slider Menu](https://raw.githubusercontent.com/project-assigments-p2-singulaars/ecommerce_duck_U/main/assets/img/sliderMenu.png)
-   - Sección de los productos más vendidos y 4 categorías de productos: ![Más Vendidos y Categorías](https://raw.githubusercontent.com/project-assigments-p2-singulaars/ecommerce_duck_U/main/assets/img/másvendidos+categorias.png)
-   - Sección donde puedes ver la ubicación de la tienda: ![Mapa](https://raw.githubusercontent.com/project-assigments-p2-singulaars/ecommerce_duck_U/main/assets/img/map.png)
-   - Footer con información para el cliente y links a las diferentes redes sociales: ![Footer](https://raw.githubusercontent.com/project-assigments-p2-singulaars/ecommerce_duck_U/main/assets/img/footer.png)
-   - Desplegable para buscar un producto: ![Búsqueda](https://raw.githubusercontent.com/project-assigments-p2-singulaars/ecommerce_duck_U/main/assets/img/search.png)
+   - Slider con 4 categorías de productos: ![Slider Menu](https://raw.githubusercontent.com/project-assigments-p2-singulaars/ecommerce_duck_U/main/assets/screensReadme/sliderMenu.png)
+   - Sección de los productos más vendidos y 4 categorías de productos: ![Más Vendidos y Categorías](https://raw.githubusercontent.com/project-assigments-p2-singulaars/ecommerce_duck_U/main/assets/screensReadme/másvendidos+categorias.png)
+   - Sección donde puedes ver la ubicación de la tienda: ![Mapa](https://raw.githubusercontent.com/project-assigments-p2-singulaars/ecommerce_duck_U/main/assets/screensReadme/map.png)
+   - Footer con información para el cliente y links a las diferentes redes sociales: ![Footer](https://raw.githubusercontent.com/project-assigments-p2-singulaars/ecommerce_duck_U/main/assets/screensReadme/footer.png)
+   - Desplegable para buscar un producto: ![Búsqueda](https://raw.githubusercontent.com/project-assigments-p2-singulaars/ecommerce_duck_U/main/assets/screensReadme/search.png)
 
 2. **Formulario**:
-   - Sirve para que el administrador pueda agregar nuevos productos por categoría: ![Formulario](https://raw.githubusercontent.com/project-assigments-p2-singulaars/ecommerce_duck_U/main/assets/img/form.png)
+   - Sirve para que el administrador pueda agregar nuevos productos por categoría: ![Formulario](https://raw.githubusercontent.com/project-assigments-p2-singulaars/ecommerce_duck_U/main/assets/screensReadme/form.png)
 
 3. **Vista Detallada del Producto**:
-   - Muestra los detalles de un producto específico: ![Vista Detallada del Producto](https://raw.githubusercontent.com/project-assigments-p2-singulaars/ecommerce_duck_U/main/assets/img/product-view.png)
-   - También puedes agregar los productos al carrito de compras: ![Carrito de compras](https://raw.githubusercontent.com/project-assigments-p2-singulaars/ecommerce_duck_U/main/assets/img/car.png)
+   - Muestra los detalles de un producto específico: ![Vista Detallada del Producto](https://raw.githubusercontent.com/project-assigments-p2-singulaars/ecommerce_duck_U/main/assets/screensReadme/product-view.png)
+   - También puedes agregar los productos al carrito de compras: ![Carrito de compras](https://raw.githubusercontent.com/project-assigments-p2-singulaars/ecommerce_duck_U/main/assets/screensReadme/car.png)
 
 4. **Catálogo**:
-   - Muestra todos los productos disponibles: ![Catálogo](https://raw.githubusercontent.com/project-assigments-p2-singulaars/ecommerce_duck_U/main/assets/img/catalog.png)
+   - Muestra todos los productos disponibles: ![Catálogo](https://raw.githubusercontent.com/project-assigments-p2-singulaars/ecommerce_duck_U/main/assets/screensReadme/catalog.png)
 
 ## Contribución
 Aceptamos contribuciones para futuras tareas pendientes como el responsive, iniciar sesión para el usuario y que pueda seleccionar sus productos favoritos, y que la web esté linkeada con la vista de administrador.

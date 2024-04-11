@@ -106,3 +106,8 @@ form {
   border:0;
 }
 
+.imgpreview {
+  width: 300px;
+  height: 200px;
+}
+

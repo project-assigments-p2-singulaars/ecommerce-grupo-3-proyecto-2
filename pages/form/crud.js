@@ -113,3 +113,11 @@ document.getElementById('borrarProducto').addEventListener('click', function() {
             alert('Error al eliminar producto');
         });
 });
+
+function updateImage() {
+    const imageUrlInput = document.getElementById('imageUrlInput').value;
+    const image = document.getElementById('image');
+    
+    // Actualizar la URL de la imagen
+    image.src = imageUrlInput;
+}

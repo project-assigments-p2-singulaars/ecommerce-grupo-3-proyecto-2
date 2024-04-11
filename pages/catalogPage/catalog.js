@@ -6,6 +6,7 @@ if (enlaceClickado == "VER TODOS"){
 fetch(url)
     .then(response => response.json())
     .then(data => {
+      
         const products = data;
         console.log(products);
         printCard(products);//PRINTANDO CARDS
@@ -109,7 +110,7 @@ function buscarProducto(parametro) {
             
 
             let cardPrice = document.createElement('p');
-            cardPrice.textContent = `${product.price.toFixed(2)} €`;
+            cardPrice.textContent = `${parseFloat(product.price).toFixed(2)} €`;
             cardPrice.classList.add("cardPrice");
 
             let linkProductView = document.createElement('a');

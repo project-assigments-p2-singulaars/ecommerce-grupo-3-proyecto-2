@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title> 
+    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="../../components/header/header.css">
+</head>
+<body>
+    <script src="headerForm.js"></script>
+    <form id="formulario">
+        <p class="titleProduct">NUEVO</p>
+            <p class="titleProduct"> PRODUCTO</p>
+        <div class="empty-image-user"></div>
+        <img class="imgPreview" src="../../assets/img/image 6.png">
+            <label style="visibility:hidden;">AÑADIR IMÁGENES</label>
+            <input type="text" id="imageUrlInput" placeholder="Introduce la URL de la imagen">
+            <button type="button" onclick="updateImage()">Actualizar Imagen</button>
+
+        </div>
+        <section id="form-data-content">
+            <input class="field" type="text" id="title" placeholder="Título..."/>
+            <div id="category-price">
+                <select  type="number" id="category" placeholder="Categoría...">
+                    <option>CULTURA POP</option>
+                    <option>ARTISTAS</option>
+                    <option>PELÍCULAS</option>
+                    <option>PROGRAMACIÓN</option>
+                </select>
+                <div id="currency-right"><input  type="number" id="price" placeholder="Precio..." min="0"/><i>€</i></div>
+            </div>
+            <div id="stock"><input class="field" type="number" id="price" placeholder="Stock..." min="1"/>
+            </div>
+                <input class="fieldDescription" type="text" id="description" placeholder="Descripción"/>
+        </section>
+        <button class="publicarButton" type="submit">PUBLICAR</button>
+        <img src="../../assets/icons/Plus.png" alt="">
+    </form>
+</body>
+</html>

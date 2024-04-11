@@ -1,10 +1,8 @@
-// window.onload = () =>{
-
 let allProducts = [];
 const cartMenu = document.getElementById("cart-icon");
 const contador = document.querySelector(".count-products");
 const rowProduct = document.querySelector(".row-product");
-const buttonAddToCard = document.querySelector(".buttonAddToCard");
+const btnAddToCart = document.querySelector(".buttonAddToCard");
 const cartDiv = document.querySelector(".container-cart-products");
 cartMenu.addEventListener("click", () => {
   if (cartDiv.style.display === "block") {
@@ -14,7 +12,7 @@ cartMenu.addEventListener("click", () => {
   }
 });
 
-buttonAddToCard.addEventListener("click", (e) => {
+btnAddToCart.addEventListener("click", (e) => {
   if (e.target.classList.contains("buttonAddToCard")) {
     const product = e.target.parentElement.parentElement;
     const infoProduct = {
@@ -38,7 +36,6 @@ buttonAddToCard.addEventListener("click", (e) => {
       allProducts = [...products];
     } else {
       allProducts = [...allProducts, infoProduct];
-      console.log(allProducts);
     }
 
     showHtml();
@@ -96,4 +93,3 @@ const showHtml = () => {
   console.log(total);
 };
 
-// }

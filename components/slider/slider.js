@@ -26,11 +26,9 @@ const mostSoldData = [
   },
 ];
 
-// Crear la sección
 const mostSoldSection = document.createElement("section");
 mostSoldSection.classList.add("most-sold-section");
 
-// Crear el título
 const mostSoldTitle = document.createElement("div");
 mostSoldTitle.classList.add("most-sold-title");
 mostSoldSection.appendChild(mostSoldTitle);
@@ -45,12 +43,10 @@ title2.classList.add("most-sold-title2");
 title2.textContent = "MÁS VENDIDOS";
 mostSoldTitle.appendChild(title2);
 
-// Crear el contenedor del carrusel de productos
 const mostSoldCarousel = document.createElement("div");
 mostSoldCarousel.classList.add("most-sold-carousel");
 mostSoldSection.appendChild(mostSoldCarousel);
 
-// Crear cada elemento de producto
 mostSoldData.forEach((product) => {
   const productItem = document.createElement("div");
   productItem.classList.add("most-sold-item");
@@ -74,6 +70,5 @@ mostSoldData.forEach((product) => {
   mostSoldCarousel.appendChild(productItem);
 });
 
-// Agregar la sección al documento
 const container = document.querySelector(".most-sold-container");
 container.appendChild(mostSoldSection);

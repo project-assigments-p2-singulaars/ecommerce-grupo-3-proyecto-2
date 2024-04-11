@@ -1,4 +1,3 @@
-// Datos de las categorías
 const categoryData = [
   {
     name: "CULTURA POP",
@@ -18,11 +17,9 @@ const categoryData = [
   },
 ];
 
-// const divCategoryContainer = document.getElementsByClassName("category-container");
 
 const categoryContainer = document.querySelector(".category-grid-container");
 
-// Crear cada elemento de categoría
 categoryData.forEach((category) => {
   const categoryGridItem = document.createElement("div");
   categoryGridItem.classList.add("category-grid-item");

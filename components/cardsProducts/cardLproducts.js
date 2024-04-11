@@ -1,6 +1,4 @@
 const productData = JSON.parse(sessionStorage.getItem('productData'));
-console.log(productData);
-
 
 let cardL = document.createElement("section");
 cardL.classList.add("cardL");

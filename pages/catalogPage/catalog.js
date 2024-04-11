@@ -1,4 +1,4 @@
-const url = "http://localhost:3003/products";
+const url = "http://localhost:3000/products";
 const miVariable = sessionStorage.getItem("miValor");
 const enlaceClickado = sessionStorage.getItem("enlaceClicado");
 
@@ -7,14 +7,12 @@ if (enlaceClickado == "VER TODOS") {
     .then((response) => response.json())
     .then((data) => {
       const products = data;
-      console.log(products);
-      printCard(products); //PRINTANDO CARDS
+      printCard(products); 
     })
     .then(sessionStorage.removeItem("enlaceClicado"))
     .catch((error) => console.error("Error al cargar los datos:", error));
 }
 
-console.log(enlaceClickado);
 
 buscarProducto(miVariable);
 buscarCategoria(enlaceClickado);
@@ -50,7 +48,7 @@ function buscarCategoria(parametro) {
         producto.category.toLowerCase().includes(inputCategoria.toLowerCase())
       );
 
-      printCard(productos); //PRINTANDO CARDS
+      printCard(productos);
     })
     .then(sessionStorage.removeItem("enlaceClicado"))
     .catch((error) => {
@@ -66,15 +64,12 @@ function guardarValor(enlace) {
 }
 
 function guardarValorYRedireccionar() {
-  // Capturar el valor del input
   let valor = document.getElementById("inputTitulo").value;
 
   if (valor === "") {
   } else {
-    // Guardar el valor en sessionStorage
     sessionStorage.setItem("miValor", valor);
 
-    // Redireccionar a otra página HTML
     window.location.href = "catalog.html";
   }
 }
@@ -103,17 +98,10 @@ function printCard(productos) {
       cardPrice.textContent = `${parseFloat(product.price).toFixed(2)} €`;
       cardPrice.classList.add("cardPrice");
 
-      let linkProductView = document.createElement("a");
-      linkProductView.href = "../components/product-view/product-view.html";
-
       cardS.appendChild(favImg);
       cardS.appendChild(cardImg);
       cardS.appendChild(cardTitle);
       cardS.appendChild(cardPrice);
-      cardS.appendChild(linkProductView);
-      linkProductView.appendChild(cardImg);
-      linkProductView.appendChild(cardTitle);
-
       catalogGrid.appendChild(cardS);
     });
   }

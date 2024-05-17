@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+body {
+  margin: 0;
+}
+footer {
+  bottom: 0;
+  width: 100%;
+}
+
+#duck-footer {
+  /* background-color: #FFD801; */
+  height: 40%;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 10vw;
+  margin-top: 2vh;
+}
+
+#duck-text-box {
+  background-color: #ffd801;
+  width: 60%;
+  height: 10%;
+  padding: 3%;
+}
+
+#duck-text-box p {
+  border: 3px solid white;
+  font-size: 0.9rem;
+  margin-left: 5%;
+  margin-right: 5%;
+  text-align: center;
+  font-family: "Open Sans";
+  font-weight: bold;
+  padding: 3%;
+}
+#duck-img {
+  margin-top: -10%;
+  bottom: 0;
+  width: 50%;
+  height: 50%;
+  z-index: 0;
+}
+
+#footer-div {
+  background-color: #ffd801;
+  width: 100vw;
+  z-index: 1;
+  position: relative;
+}
+
+#social-media {
+  margin-top: -17%;
+  padding-top: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#social-media img {
+  max-width: 45%; /* Establecer un ancho máximo para las imágenes */
+  height: auto;
+  margin-left: 10%;
+}
+
+#social-media a {
+  font-size: 0;
+  margin-right: -10%;
+}
+
+#page-information {
+  font-family: "Open Sans";
+  font-weight: 600;
+  margin-left: 5%;
+  margin-right: 5%;
+  text-align: center;
+  padding-bottom: 5%;
+  font-size: 0.85rem;
+}

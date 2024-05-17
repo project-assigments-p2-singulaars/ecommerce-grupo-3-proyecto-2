@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../../assets/img/patito.png" type="image/x-icon">
+    <title>DUCK U</title>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCSXKL5ExtI0rbc-MAVDD-qju3yd-_2UGA&callback=initMap" async defer></script>
+    <link rel="stylesheet" type="text/css" href="./components/header/header.css">
+    <link rel="stylesheet" href="./components/landingBanner/landingBanner.css">
+    <link rel="stylesheet" href="./components/slider/slider.css">
+    <link rel="stylesheet" href="./components/category/category.css">
+    <link rel="stylesheet" href="./components/storeLocation/storeLocation.css">
+    <link rel="stylesheet" href="./components/footer/footer.css">
+    <link rel="stylesheet" href="./components/cardsProducts/cardsProducts.css">
+</head>
+
+<body>
+    <script src="./components/header/header.js"></script>
+    <main>
+        <section class="header-section">
+            <div class="header-container">
+                <script src="./components/landingBanner/landingBanner.js"></script>
+            </div>
+        </section>
+        <section class="most-sold-section">
+            <div class="most-sold-container">
+                <script src="./components/slider/slider.js"></script>
+            </div>
+        </section>
+        <section class="category-section">
+            <div class="category-grid-container">
+            </div>
+        </section>
+        <section id="stores-location">
+            <h2>Nuestra tienda</h2>
+            <div id="map"></div>
+        </section>
+    </main>
+    <script src="./components/storeLocation/storeLocation.js" defer></script>
+    <script src="filter-json.js"></script>
+    <script src="./components/footer/footer.js"></script>
+    <script src="./components/category/category.js"></script>
+    <script src="./components/shoppingCart/shoppinCart.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCSXKL5ExtI0rbc-MAVDD-qju3yd-_2UGA&callback=initMap&v=weekly"defer></script>
+</body>
+
+</html>
